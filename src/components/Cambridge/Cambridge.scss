@@ -1,0 +1,74 @@
+#cambridge {
+  padding: 50px 0;
+  .cambridge {
+    h1 {
+      color: var(--text-212121, #212121);
+      font-size: 48px;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+    &--block {
+      width: 119px;
+      height: 3px;
+      border-radius: 2px;
+      background: #6483f6;
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #002ac0;
+      font-family: Montserrat, sans-serif;
+      font-size: 36px;
+      font-weight: 500;
+      text-transform: capitalize;
+      margin: 55px 0 14px 0;
+    }
+    span {
+      color: var(--text-1212, #010d39);
+      font-family: Montserrat, sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      text-transform: capitalize;
+    }
+    h3 {
+      color: #010d39;
+      font-family: Montserrat, sans-serif;
+      font-size: 32px;
+      font-weight: 500;
+      text-transform: capitalize;
+      margin-bottom: 15px;
+    }
+    p {
+      color: #010d39;
+      font-family: Montserrat, sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      text-transform: capitalize;
+      width: 1140px;
+      margin-bottom: 5px;
+    }
+    &--li {
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+      &__icon {
+        &--one {
+          font-size: 30px;
+          font-weight: 700;
+          color: black;
+          margin-bottom: 22px;
+        }
+      }
+      &__text {
+        margin-left: 25px;
+        li {
+          color: #333;
+          font-family: Montserrat, sans-serif;
+          font-size: 20px;
+          font-weight: 500;
+          text-transform: uppercase;
+          margin-bottom: 22px;
+        }
+      }
+    }
+  }
+}

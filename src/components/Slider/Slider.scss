@@ -1,0 +1,24 @@
+#slider {
+  padding: 40px 0;
+  .slider {
+    h1 {
+      color: var(--text-212121, #212121);
+      font-size: 44px;
+      font-weight: 500;
+      text-transform: capitalize;
+      text-align: center;
+      margin: 100px 0;
+    }
+    &--block {
+      display: flex;
+      overflow-x: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      margin: 0 -9% 0 10px;
+      &__video {
+        margin-right: 5%;
+      }
+    }
+  }
+}

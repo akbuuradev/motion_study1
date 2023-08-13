@@ -1,0 +1,39 @@
+#our {
+  .our {
+    h1 {
+      color: var(--text-212121, #212121);
+      font-size: 48px;
+      font-weight: 500;
+      text-transform: capitalize;
+      text-align: center;
+      margin: 140px 0;
+    }
+    &--block {
+      display: flex;
+      flex-wrap: wrap;
+      &__mini {
+        width: 315px;
+        height: 419px;
+        border-radius: 8px;
+        box-shadow: 5px 8px 24px 0px rgba(0, 0, 0, 0.1);
+        margin: 0 110px 50px 0;
+        h2 {
+          color: #000;
+          font-size: 20px;
+          font-weight: 500;
+          text-transform: capitalize;
+          text-align: center;
+          margin: 20px 0 10px 0;
+        }
+        p {
+          color: rgba(123, 106, 255, 0.5);
+          font-family: Montserrat, sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          text-transform: capitalize;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
