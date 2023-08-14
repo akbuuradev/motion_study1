@@ -10,13 +10,14 @@
     }
     &--block {
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
       &__mini {
         width: 315px;
         height: 419px;
         border-radius: 8px;
-        box-shadow: 5px 8px 24px 0px rgba(0, 0, 0, 0.1);
-        margin: 0 110px 50px 0;
+        box-shadow: 5px 8px 24px 0 rgba(0, 0, 0, 0.1);
+        margin: 0 98px 50px 0;
         h2 {
           color: #000;
           font-size: 20px;

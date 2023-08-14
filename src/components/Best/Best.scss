@@ -3,7 +3,7 @@
   .best {
     display: flex;
     align-items: start;
-    justify-content: space-around;
+    justify-content:space-between;
     position: relative;
     &--img {
       width: 493px;
@@ -13,7 +13,7 @@
       img {
         position: absolute;
         top: -105px;
-        left: 120px;
+        left: 60px;
       }
     }
     &--text {
