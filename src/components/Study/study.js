@@ -1,6 +1,7 @@
 import React from 'react';
 import './study.scss'
 import study from './../../images/Bitmap.svg'
+import {NavLink} from "react-router-dom";
 
 const Study = () => {
     return (
@@ -27,7 +28,7 @@ const Study = () => {
                             <p>- executive centres</p>
                             <p>- summer camps</p>
                             <p>- guardianship companies</p>
-                            <button className="study--title__left--btn">Explore</button>
+                            <NavLink to={'/countries'}><button className="study--title__left--btn">Explore</button></NavLink>
                         </div>
                     </div>
                 </div>

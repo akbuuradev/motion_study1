@@ -10,10 +10,22 @@ const Header = () => {
         <div className="header">
           <img src={Motion} alt="" />
           <div className="header--nav">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/about">About Us</NavLink>
-            <NavLink to="/study">Study Abroad</NavLink>
-            <NavLink to="/contacts">Contacts</NavLink>
+            <NavLink className="header--nav__item" to="/">
+              <span>Home</span>
+              <div className="hovers"></div>
+            </NavLink>
+            <NavLink className="header--nav__item" to="/about">
+             <span>About Us</span>
+              <div className="hovers"></div>
+            </NavLink>
+            <NavLink className="header--nav__item" to="/study">
+              <span>Study Abroad</span>
+              <div className="hovers"></div>
+            </NavLink>
+            <NavLink className="header--nav__item" to="/contacts">
+              <span>Contacts</span>
+              <div className="hovers"></div>
+            </NavLink>
             <div className="flex md:order-2">
               <button
                 type="button"

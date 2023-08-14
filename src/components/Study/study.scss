@@ -1,6 +1,6 @@
 #study {
   .study {
-    padding-bottom: 200px;
+    padding: 50px 0 100px 0;
     h1 {
       color: var(--text-212121, #212121);
       font-size: 48px;
@@ -43,14 +43,14 @@
          padding: 30px 0 58px 0;
          span {
            color: #000;
-
+           font-weight: 550;
          }
        }
       h5 {
         width: 579px;
         color: var(--text-1212, #070606);
         font-size: 20px;
-        font-weight: 500;
+        font-weight: 550;
         line-height: 182.836%;
       }
        p {

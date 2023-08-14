@@ -1,13 +1,46 @@
 #header {
+  box-shadow: 5px 8px 24px 0 rgba(0, 0, 0, 0.10);
+  padding: 20px 0;
+  border-top: 9px solid #FF6A6A;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  right: 0;
+  left: 0;
+  background: #FFFFFF;
   .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
     &--nav {
-     display: flex;
+      display: flex;
       gap: 60px;
       align-items: center;
+
+      &__item {
+
+
+        .hovers {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: #FF6A6A;
+          opacity: 1;
+          transition: all .4s ease-in-out;
+        }
+
+
+
+        &:hover {
+          .hovers {
+            opacity: 1;
+          }
+        }
+
+
+
+      }
+
 
       &__inputs {
         border: 1px solid gray;
