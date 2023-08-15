@@ -4,7 +4,7 @@
   border-top: 9px solid #FF6A6A;
   position: sticky;
   top: 0;
-  z-index: 99;
+  z-index: 98;
   right: 0;
   left: 0;
   background: #FFFFFF;
@@ -16,29 +16,27 @@
       display: flex;
       gap: 60px;
       align-items: center;
-
-      &__item {
-
-
-        .hovers {
-          width: 8px;
-          height: 8px;
+      a{
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background-color: red;
           border-radius: 50%;
-          background-color: #FF6A6A;
+          bottom: -5px;
+          left: 50%;
+          transform: translateX(-50%);
+          opacity: 0;
+          transition: opacity 0.3s ease-in-out;
+        }
+        &:focus:after {
           opacity: 1;
-          transition: all .4s ease-in-out;
         }
-
-
-
-        &:hover {
-          .hovers {
-            opacity: 1;
-          }
+        &:hover:after {
+          opacity: 1;
         }
-
-
-
       }
 
 

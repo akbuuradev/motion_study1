@@ -1,3 +1,6 @@
+
+
+
 #hero {
   padding: 100px 0;
   position: relative;
@@ -5,6 +8,16 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    
+    .video-container {
+      position: absolute;
+      width: 100px;
+      bottom: 270px;
+      left: 450px;
+      rotate: 75deg;
+    }
+    
+    
     .hero--block {
       padding-left: 20px;
       display: flex;
@@ -31,6 +44,7 @@
         }
         input {
           outline: none;
+          border: none;
         }
       }
       button {
@@ -45,19 +59,19 @@
         color: #fff;
         border: none;
         cursor: pointer;
-        &::after {
-          content: "";
-          position: absolute;
-          width: 10px;
-          height: 10px;
-          background-color: red;
-          border-radius: 50%;
-          bottom: -5px;
-          left: 50%;
-          transform: translateX(-50%);
-          opacity: 0;
-          transition: opacity 0.3s ease-in-out;
-        }
+        // &::after {
+        //   content: "";
+        //   position: absolute;
+        //   width: 10px;
+        //   height: 10px;
+        //   background-color: red;
+        //   border-radius: 50%;
+        //   bottom: -5px;
+        //   left: 50%;
+        //   transform: translateX(-50%);
+        //   opacity: 0;
+        //   transition: opacity 0.3s ease-in-out;
+        // }
         
         &:focus:after {
           opacity: 1;
@@ -79,7 +93,7 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
-        text-transform: lowercase;
+        // text-transform: lowercase;
       }
 
       h1 {

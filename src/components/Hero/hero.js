@@ -5,6 +5,7 @@ import three from "../../images/three.png";
 import four from "../../images/four.png";
 import block1 from "../../images/hblock.png";
 import block2 from "../../images/hblock1.png";
+import go from "../../images/Запись экрана от 14.08.2023 15:54:26.webm";
 import "./hero.scss";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -30,7 +31,7 @@ const Hero = () => {
             data-aos-easing="ease-in-sine"
             className="hero--title"
           >
-            <h4>eXPLORE tHE wORLD</h4>
+            <h4>Explore The World</h4>
             <h1>Study abroad with our help</h1>
             <p>
               Study at the world's top universities and expand your horizons.
@@ -60,6 +61,9 @@ const Hero = () => {
             </div>
             <button>Contact</button>
           </div>
+          <video autoPlay loop class="video-container">
+            <source src={go} type="video/mp4"></source>
+          </video>
         </div>
       </div>
     </div>
