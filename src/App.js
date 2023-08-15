@@ -7,6 +7,7 @@ import Footer from "./components/Footer/footer";
 import StudyAbb from "./components/StudyAbb/studyAbb";
 import HomeDetails from "./pages/HomeDetails";
 import Countries from "./components/pages/Countries/Countries";
+import Preloader from "./components/preloader/preloader";
 import United from "./components/pages/United/United";
 import Aptis from "./components/Aptis/Aptis";
 import Ielts from "./components/Ielts/Ielts";
@@ -15,6 +16,10 @@ import Other from "./components/Other/Other";
 function App() {
   return (
     <div className="App">
+      <Preloader/>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home/>} />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
