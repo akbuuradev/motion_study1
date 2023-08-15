@@ -48,11 +48,11 @@ const Countries = () => {
             </div>
           </div>
           <div className="flag--block">
-           <Link to={"/country"}> 
-           <div className="flag--block__one">
-              <img src={america} alt="img" />
-              <h2>America</h2>
-            </div>
+            <Link to={"/united"}>
+              <div className="flag--block__one">
+                <img src={america} alt="img" />
+                <h2>America</h2>
+              </div>
             </Link>
 
             <div className="flag--block__one">
