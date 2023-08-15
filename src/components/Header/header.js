@@ -18,19 +18,15 @@ const Header = () => {
           <div className="header--nav">
             <NavLink className="header--nav__item" to="/">
               <span>Home</span>
-              <div className="hovers"></div>
             </NavLink>
             <NavLink className="header--nav__item" to="/about">
              <span>About Us</span>
-              <div className="hovers"></div>
             </NavLink>
             <NavLink className="header--nav__item" to="/study">
               <span>Study Abroad</span>
-              <div className="hovers"></div>
             </NavLink>
             <NavLink className="header--nav__item" to="/contacts">
               <span>Contacts</span>
-              <div className="hovers"></div>
             </NavLink>
             <NavLink to={'/'} onClick={() => setSearchContent(true)}
                      className="flex md:order-2">
@@ -55,7 +51,7 @@ const Header = () => {
                     <span className="sr-only">Search icon</span>
                   </div>
                   <input  id="search-navbar"
-                         className="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                         className="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500  dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                            style={{
                     outline: searchContent ? 'none' : '',
                     border: searchContent ? 'none' : '',
@@ -84,7 +80,6 @@ const Header = () => {
                 </div>
               </div>
             </NavLink>
-
           </div>
         </div>
       </div>
