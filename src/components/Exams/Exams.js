@@ -39,9 +39,12 @@ function Exams() {
               <div className="exams--big__two--block">
                 <img src={Frame} alt="img" />
                 <div className="exams--big__two--block__text">
-                  <div className="exams--big__two--block__text--mini">
-                    <h5>Aptis</h5>
-                  </div>
+                  <NavLink to="/aptis">
+                    <div className="exams--big__two--block__text--mini">
+                      <h5>Aptis</h5>
+                    </div>
+                  </NavLink>
+
                   <h3>
                     Choose Aptis for your <br /> assessment needs
                   </h3>
@@ -54,9 +57,12 @@ function Exams() {
               <div className="exams--big__two--block">
                 <img src={Frame} alt="img" />
                 <div className="exams--big__two--block__text">
-                  <div className="exams--big__two--block__text--mini">
-                    <h5>IELTS</h5>
-                  </div>
+                  <NavLink to="/ielts">
+                    <div className="exams--big__two--block__text--mini">
+                      <h5>IELTS</h5>
+                    </div>
+                  </NavLink>
+
                   <h3>
                     Here’s all you need to know <br /> about IELTS
                   </h3>
@@ -69,9 +75,12 @@ function Exams() {
               <div className="exams--big__two--block">
                 <img src={Frame} alt="img" />
                 <div className="exams--big__two--block__text">
-                  <div className="exams--big__two--block__text--mini1">
-                    <h5>Other Exams</h5>
-                  </div>
+                  <NavLink to="/other">
+                    <div className="exams--big__two--block__text--mini1">
+                      <h5>Other Exams</h5>
+                    </div>
+                  </NavLink>
+
                   <h3>
                     There are a variety of <br /> competitive exams besides.
                   </h3>
