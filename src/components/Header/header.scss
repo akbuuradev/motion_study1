@@ -17,8 +17,27 @@
       gap: 60px;
       align-items: center;
 
-      &__item {
+      .search--wrap {
+        .search--content {
+          display: flex;
+          flex-direction: column;
+          row-gap: 7px;
+          background: #FFFFFF;
+          border-radius: 8px;
+          width: 203px;
+          padding: 25px 0 15px 20px;
+          position: absolute;
+          top: 36px;
 
+          &__item {
+            font-weight: 500;
+            font-size: 16px;
+            color: #212121;
+          }
+        }
+      }
+
+      &__item {
 
         .hovers {
           width: 8px;
@@ -28,20 +47,12 @@
           opacity: 1;
           transition: all .4s ease-in-out;
         }
-
-
-
         &:hover {
           .hovers {
             opacity: 1;
           }
         }
-
-
-
       }
-
-
       &__inputs {
         border: 1px solid gray;
       }
