@@ -5,7 +5,7 @@ import three from "../../images/three.png";
 import four from "../../images/four.png";
 import block1 from "../../images/hblock.png";
 import block2 from "../../images/hblock1.png";
-import go from "../../images/Запись экрана от 14.08.2023 15:54:26.webm";
+import go from "../../images/louch.webm";
 import "./hero.scss";
 import { useEffect } from "react";
 import AOS from "aos";
