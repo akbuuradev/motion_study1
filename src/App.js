@@ -8,6 +8,10 @@ import StudyAbb from "./components/StudyAbb/studyAbb";
 import HomeDetails from "./pages/HomeDetails";
 import Countries from "./components/pages/Countries/Countries";
 import Preloader from "./components/preloader/preloader";
+import United from "./components/pages/United/United";
+import Aptis from "./components/Aptis/Aptis";
+import Ielts from "./components/Ielts/Ielts";
+import Other from "./components/Other/Other";
 
 function App() {
   return (
@@ -16,10 +20,17 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home/>} />
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
         <Route path={"/study"} element={<StudyAbb />} />
         <Route path="/cambridge" element={<HomeDetails />} />
         <Route path="/about" element={<Aboutus />} />
         <Route path={"countries"} element={<Countries />} />
+        <Route path={"/united"} element={<United />} />
+        <Route path={"/aptis"} element={<Aptis />} />
+        <Route path={"/ielts"} element={<Ielts />} />
+        <Route path={"/other"} element={<Other />} />
       </Routes>
       <Footer />
     </div>

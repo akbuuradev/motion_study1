@@ -9,6 +9,11 @@
     &--right {
       display: flex;
       flex-direction: column;
+      width: 692px;
+      height: 578px;
+      flex-shrink: 0;
+      background: #FFF;
+      box-shadow: 5px 8px 26px 0 rgba(86, 9, 187, 0.10);
 
       .inputs {
         width: 275px;
@@ -26,30 +31,34 @@
         font-weight: 500;
         line-height: normal;
         text-transform: capitalize;
-        padding: 0 0 20px 0;
+        padding: 50px 0 20px 30px;
       }
 
       &__name {
         display: flex;
-        padding: 20px 0;
+        padding: 20px 30px;
 
       }
 
       &__email {
         display: flex;
-        padding: 20px 0;
+        padding: 20px 30px;
       }
 
       &__group {
         display: flex;
         flex-direction: column;
-        padding: 20px 0;
-        width: 585px;
+        padding: 20px 30px;
+
+        &--com {
+          border-bottom: 2px solid gray;
+          width: 585px;
+        }
 
         .block {
           display: flex;
           align-items: center;
-          justify-content: center;
+          justify-content: space-evenly;
         }
 
         textarea {
@@ -181,6 +190,120 @@
 
     }
 
+    .detail {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 140;
+      min-width: 100vw;
+      min-height: 100vh;
+      background: black;
+      background: rgba(0, 0, 0, 0.8);
+
+      &--open {
+        &__none {
+          display: flex;
+          justify-content: end;
+          padding-right: 20px;
+          cursor: pointer;
+        }
+
+        display: flex;
+        flex-direction: column;
+        width: 580px;
+        height: 520px;
+        border-radius: 2px;
+        background: #ffffff;
+
+        &__name {
+          h2 {
+            text-align: center;
+            font-weight: 600;
+            font-size: 28px;
+            color: #000;
+          }
+
+          h3 {
+            text-align: center;
+            font-weight: 400;
+            font-size: 24px;
+            color: #000;
+          }
+        }
+
+        &__phone {
+          h2 {
+            text-align: center;
+            font-weight: 600;
+            color: #000;
+            font-size: 28px;
+          }
+
+          h3 {
+            text-align: center;
+            font-weight: 400;
+            color: #000;
+            font-size: 24px;
+          }
+        }
+
+        &__email {
+          h2 {
+            text-align: center;
+            font-weight: 600;
+            color: #000;
+            font-size: 28px;
+          }
+
+          h3 {
+            text-align: center;
+            font-weight: 400;
+            color: #000;
+            font-size: 24px;
+          }
+        }
+
+        &__group {
+          h2 {
+            text-align: center;
+            font-weight: 600;
+            color: #000;
+            font-size: 28px;
+          }
+
+          h3 {
+            text-align: center;
+            font-weight: 400;
+            color: #000;
+            font-size: 24px;
+          }
+        }
+
+        &__help {
+          h2 {
+            text-align: center;
+            font-weight: 600;
+            color: #000;
+            font-size: 28px;
+          }
+
+          h3 {
+            text-align: center;
+            font-weight: 400;
+            color: #000;
+            font-size: 24px;
+          }
+        }
+
+
+      }
+    }
+
     .send {
       display: flex;
       justify-content: end;
@@ -193,8 +316,8 @@
       z-index: 140;
       min-width: 100vw;
       min-height: 100vh;
-      background:black;
-      background:rgba(0,0,0,0.8);
+      background: black;
+      background: rgba(0, 0, 0, 0.8);
 
       &--titles {
         margin-right: 180px;
