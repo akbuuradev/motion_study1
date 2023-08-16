@@ -12,6 +12,10 @@ import United from "./components/pages/United/United";
 import Aptis from "./components/Aptis/Aptis";
 import Ielts from "./components/Ielts/Ielts";
 import Other from "./components/Other/Other";
+import Application from "./components/Application/application";
+import University from "./pages/University/university";
+import Cost from "./pages/Cost/cost";
+import UniversityDetail from "./pages/UniversityDetail";
 
 function App() {
   return (
@@ -28,6 +32,8 @@ function App() {
         <Route path={"/aptis"} element={<Aptis />} />
         <Route path={"/ielts"} element={<Ielts />} />
         <Route path={"/other"} element={<Other />} />
+          <Route path={"/application"} element={<Application/>}/>
+          <Route path={"/university_detail"} element={<UniversityDetail/>}/>
       </Routes>
       <Footer/>
     </div>

@@ -30,7 +30,7 @@ function Exams() {
                   qualifications are based on research into effective teaching
                   and learning.
                 </h5>
-                <NavLink to="cambridge">
+                <NavLink onClick={() => window.scroll(0, 0)} to="cambridge">
                   <h4>Discover more</h4>
                 </NavLink>
               </div>
@@ -39,7 +39,7 @@ function Exams() {
               <div className="exams--big__two--block">
                 <img src={Frame} alt="img" />
                 <div className="exams--big__two--block__text">
-                  <NavLink to="/aptis">
+                  <NavLink onClick={() => window.scroll(0, 0)} to="/aptis">
                     <div className="exams--big__two--block__text--mini">
                       <h5>Aptis</h5>
                     </div>
@@ -57,7 +57,7 @@ function Exams() {
               <div className="exams--big__two--block">
                 <img src={Frame} alt="img" />
                 <div className="exams--big__two--block__text">
-                  <NavLink to="/ielts">
+                  <NavLink onClick={() => window.scroll(0, 0)} to="/ielts">
                     <div className="exams--big__two--block__text--mini">
                       <h5>IELTS</h5>
                     </div>
@@ -75,7 +75,7 @@ function Exams() {
               <div className="exams--big__two--block">
                 <img src={Frame} alt="img" />
                 <div className="exams--big__two--block__text">
-                  <NavLink to="/other">
+                  <NavLink onClick={() => window.scroll(0, 0)} to="/other">
                     <div className="exams--big__two--block__text--mini1">
                       <h5>Other Exams</h5>
                     </div>

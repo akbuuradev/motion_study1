@@ -8,6 +8,7 @@ import sevenPhoto from "../../../images/img6.svg";
 import eightPhoto from "../../../images/img7.svg";
 import { CiLocationOn } from "react-icons/ci";
 import "./United.scss";
+import {Link, NavLink} from "react-router-dom";
 
 const United = () => {
   return (
@@ -42,7 +43,7 @@ const United = () => {
           </div>
         </div>
 
-        <div className="country">
+        <Link to={"/university_detail"}><div className="country">
           <img src={onePhoto} alt="img" />
           <div className="country--one">
             <h4>Name:</h4>
@@ -58,7 +59,7 @@ const United = () => {
             <h4>Age:</h4>
             <h3>From 16</h3>
           </div>
-        </div>
+        </div></Link>
         <div className="country">
           <img src={twoPhoto} alt="img" />
           <div className="country--one">
