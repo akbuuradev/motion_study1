@@ -1,0 +1,59 @@
+#university {
+  h1 {
+    color: #1AA2EE;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 40px 0 50px 0;
+  }
+  .university {
+    display: flex;
+    justify-content: space-between;
+
+    &--left {
+      h2 {
+        span {
+          color: rgba(51, 51, 51, 0.50);
+          font-size: 20px;
+          font-weight: 500;
+        }
+        color: var(--text-212121, #212121);
+        font-size: 20px;
+        font-weight: 500;
+        border: 2px solid gray;
+        margin: 13px 0;
+        padding: 12px 40px 19px 40px;
+      }
+      &__car {
+        width: 510px;
+        height: 286px;
+        flex-shrink: 0;
+        background: #FDFDFD;
+        box-shadow: 4.607201099395752px 7.371521949768066px 22.114566802978516px 0 rgba(0, 0, 0, 0.10);
+
+        &--shoe {
+          display: flex;
+
+          &__ties {
+            margin: 30px;
+            span {
+              color: rgba(51, 51, 51, 0.50);
+              font-size: 20px;
+              font-weight: 500;
+            }
+          }
+          &__design {
+            margin: 30px 0;
+            h3 {
+              color: var(--text-212121, #212121);
+              font-size: 18px;
+              font-weight: 500;
+              margin: 3px 0 6px 0;
+            }
+          }
+        }
+
+      }
+    }
+
+  }
+}
