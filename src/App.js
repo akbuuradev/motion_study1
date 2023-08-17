@@ -8,6 +8,10 @@ import StudyAbb from "./components/StudyAbb/studyAbb";
 import HomeDetails from "./pages/HomeDetails";
 import Countries from "./pages/Countries/Countries";
 import Preloader from "./components/preloader/preloader";
+import Aptis from "./components/Aptis/Aptis";
+import Ielts from "./components/Ielts/Ielts";
+import Other from "./components/Other/Other";
+import United from "./components/pages/America/United";
 import United from "./pages/United/United";
 import Aptis from "./components/Aptis/Aptis";
 import Ielts from "./components/Ielts/Ielts";
@@ -28,7 +32,7 @@ function App() {
         <Route path="/cambridge" element={<HomeDetails />} />
         <Route path="/about" element={<Aboutus />} />
         <Route path={"countries"} element={<Countries />} />
-        <Route path={"/united"} element={<United />} />
+        <Route path={"/united"} element={<United/>} />
         <Route path={"/aptis"} element={<Aptis />} />
         <Route path={"/ielts"} element={<Ielts />} />
         <Route path={"/other"} element={<Other />} />

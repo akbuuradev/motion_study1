@@ -38,17 +38,17 @@ const Hero = () => {
               Get the highest quality education and achieve success abroad.
             </p>
           </div>
-          <div className="hero--image">
+          <div data-aos="zoom-in" className="hero--image">
             <div>
-              <img data-aos="zoom-in" src={one} alt="" className="one" />
-              <img data-aos="zoom-in" src={three} alt="" className="two" />
+              <img src={one} alt="" className="one" />
+              <img  src={three} alt="" className="two" />
             </div>
             <div>
-              <img data-aos="zoom-in" src={two} alt="" className="three" />
-              <img data-aos="zoom-in" src={four} alt="" className="four" />
+              <img src={two} alt="" className="three" />
+              <img src={four} alt="" className="four" />
             </div>
           </div>
-          <div data-aos="zoom-in-right" className="hero--block">
+          <div className="hero--block">
             <img src={block1} alt="" />
             <div className="hero--block__input">
               <span>NAME</span>
