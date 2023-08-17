@@ -1,0 +1,14 @@
+#photo {
+  .photo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: wrap;
+    padding: 85px 0 200px 0;
+    margin: 0 0 20px 0;
+    .images {
+      width: 390px;
+      margin-bottom: 62px;
+    }
+  }
+}

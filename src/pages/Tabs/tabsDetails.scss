@@ -1,0 +1,47 @@
+#tabs {
+  .tabs {
+    padding-top: 150px;
+    &--title {
+      width: 1240px;
+      height: 65px;
+      flex-shrink: 0;
+      border-radius: 5px;
+      background: #e3e8ef;
+
+      &__photo {
+          display: flex;
+          justify-content: space-around;
+
+
+        &--item {
+          color: var(--text-212121, #212121);
+          font-size: 22px;
+          font-weight: 500;
+          margin: 16px 0;
+          position: relative;
+
+          &:hover:after {
+            position: absolute;
+            opacity: 1;
+            width: 280px;
+            border-bottom: 2px solid #EE4248;
+            transform: translateX(-50%);
+            content: '';
+            bottom: -15px;
+            left: 50%;
+          }
+          .active:before {
+            content: '';
+            position: absolute;
+            opacity: 1;
+            width: 280px;
+            transform: translateX(-50%);
+            bottom: -15px;
+            left: 50%;
+          }
+        }
+
+      }
+    }
+  }
+}

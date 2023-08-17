@@ -1,0 +1,26 @@
+#cost {
+  .cost {
+    display: flex;
+    flex-direction: column;
+    padding: 56px 0 300px 0 ;
+    h2{
+      color: var(--text-1212, #010D39);
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 175.9%;
+      padding: 30px 0;
+      span {
+        color: var(--text-1212, #36ADF0);
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 175.9%;
+      }
+    }
+    p {
+      color: var(--text-1212, #010D39);
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 175.9%;
+    }
+  }
+}
