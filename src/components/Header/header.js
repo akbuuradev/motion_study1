@@ -6,7 +6,9 @@ import OutsideClickHandler from "react-outside-click-handler/esm/OutsideClickHan
 
 
 const Header = () => {
-
+  function scrol (){
+    window.scroll(0,1000)
+  }
   const [searchContent, setSearchContent] = useState(false);
 
 
@@ -25,9 +27,9 @@ const Header = () => {
             <NavLink onClick={() => window.scroll(0, 0)} className="header--nav__item" to="/study">
               <span>Study Abroad</span>
             </NavLink>
-            <NavLink onClick={() => window.scroll(0, 0)} className="header--nav__item" to="/application">
+            <a onClick={() => window.scroll(0, 3300)} className="header--nav__item">
               <span>Contacts</span>
-            </NavLink>
+            </a>
             <Link to={'/united'}  onClick={() => setSearchContent(true)}
                      className="flex md:order-2">
               <div className="flex md:order-2">

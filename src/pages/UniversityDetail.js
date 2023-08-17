@@ -1,12 +1,14 @@
 import React from 'react';
 import University from "./University/university";
-import Cost from "./Cost/cost";
+import TabsDetails from "./Tabs/tabsDetails";
+
 
 const UniversityDetail = () => {
     return (
         <div>
             <University/>
-            <Cost/>
+            <TabsDetails/>
+
         </div>
     );
 };

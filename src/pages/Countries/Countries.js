@@ -1,17 +1,17 @@
 import React from "react";
 import "./Countries.scss";
-import america from "../../../images/america.png";
-import greatBritan from "../../../images/greatBritan.png";
-import austria from "../../../images/ausrtra.png";
-import germany from "../../../images/germany.png";
-import holland from "../../../images/holland.png";
-import ireland from "../../../images/Ireland.png";
-import spain from "../../../images/Spain.png";
-import italy from "../../../images/Italy.png";
-import canada from "../../../images/canada.png";
-import cyprus from "../../../images/cyprus.png";
-import China from "../../../images/china.png";
-import latvia from "../../../images/latvia.png";
+import america from "../../images/america.png";
+import greatBritan from "../../images/greatBritan.png";
+import austria from "../../images/ausrtra.png";
+import germany from "../../images/germany.png";
+import holland from "../../images/holland.png";
+import ireland from "../../images/Ireland.png";
+import spain from "../../images/Spain.png";
+import italy from "../../images/Italy.png";
+import canada from "../../images/canada.png";
+import cyprus from "../../images/cyprus.png";
+import China from "../../images/china.png";
+import latvia from "../../images/latvia.png";
 import { Link } from "react-router-dom";
 
 const Countries = () => {

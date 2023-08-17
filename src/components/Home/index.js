@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from '../Hero/hero';
 import BestFrom from '../BestFrom/BestFrom';
-import Application from "../Application/application.js";
+import Contacts from "../Contacts/contacts.js";
 import Exams from "../Exams/Exams";
 import Slider from "../Slider/Slider";
 
@@ -12,7 +12,7 @@ const Home = () => {
             <BestFrom/>
             <Exams/>
             <Slider/>
-            <Application/>
+            <Contacts/>
         </div>
     );
 };
