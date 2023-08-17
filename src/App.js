@@ -8,17 +8,11 @@ import StudyAbb from "./components/StudyAbb/studyAbb";
 import HomeDetails from "./pages/HomeDetails";
 import Countries from "./pages/Countries/Countries";
 import Preloader from "./components/preloader/preloader";
-import Aptis from "./components/Aptis/Aptis";
-import Ielts from "./components/Ielts/Ielts";
-import Other from "./components/Other/Other";
 import United from "./components/pages/America/United";
-import United from "./pages/United/United";
 import Aptis from "./components/Aptis/Aptis";
 import Ielts from "./components/Ielts/Ielts";
 import Other from "./components/Other/Other";
 import Contacts from "./components/Contacts/contacts";
-import University from "./pages/University/university";
-import Description from "./pages/Description/description";
 import UniversityDetail from "./pages/UniversityDetail";
 
 function App() {
