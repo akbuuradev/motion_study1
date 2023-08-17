@@ -1,11 +1,11 @@
 import React from "react";
-import onePhoto from "../../../images/img1.svg";
-import twoPhoto from "../../../images/img2.svg";
-import threePhoto from "../../../images/img3.svg";
-import fourPhoto from "../../../images/img4.png";
-import sixPhoto from "../../../images/img5.svg";
-import sevenPhoto from "../../../images/img6.svg";
-import eightPhoto from "../../../images/img7.svg";
+import onePhoto from "../../images/img1.svg";
+import twoPhoto from "../../images/img2.svg";
+import threePhoto from "../../images/img3.svg";
+import fourPhoto from "../../images/img4.png";
+import sixPhoto from "../../images/img5.svg";
+import sevenPhoto from "../../images/img6.svg";
+import eightPhoto from "../../images/img7.svg";
 import { CiLocationOn } from "react-icons/ci";
 import "./United.scss";
 import {Link, NavLink} from "react-router-dom";
