@@ -18,7 +18,7 @@ const BestFrom = () => {
               assistance in filing documents and preparing for an interview.
               Contact us and start your journey to higher education abroad!
             </p>
-            <img src={best} alt=""className="from--blocks__block--photo" />
+            <img src={best} alt="" className="from--blocks__block--photo" />
           </div>
           <div className="from--blocks">
             <div className="from--blocks__block">
@@ -32,22 +32,22 @@ const BestFrom = () => {
             <div className="from--blocks__block">
               <img src={fblock2} alt="" />
               <h3>Experts</h3>
-              <p>
-              We are experts in our field. help you reach new heights
-              </p>
+              <p>We are experts in our field. help you reach new heights</p>
             </div>
             <div className="from--blocks__block">
               <img src={fblock3} alt="" />
               <h3>Time</h3>
               <p>
-              we will help you save your time and nerves when applying to the best university.
+                we will help you save your time and nerves when applying to the
+                best university.
               </p>
             </div>
             <div className="from--blocks__block">
               <img src={fblock4} alt="" />
               <h3>Affrodable Prices</h3>
               <p>
-              reasonable prices will always please you. sign up for a consultation
+                reasonable prices will always please you. sign up for a
+                consultation
               </p>
             </div>
           </div>

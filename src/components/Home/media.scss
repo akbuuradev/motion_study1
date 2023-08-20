@@ -1,0 +1,208 @@
+@media (max-width: 1200px) {
+    .container{
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    #hero .hero .hero--title h1 {
+        font-size: 44px;
+        width: 383px;
+    }
+    #hero .hero .hero--title p {
+        color: #606060;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 133.336%;
+        letter-spacing: 0.72px;
+        width: 313px;
+    }
+    #hero .hero .hero--image .three {
+        position: absolute;
+        top: 0;
+        right: -20px;
+        animation: floatingAnimation 6s ease-in-out infinite;
+        width: 60%;
+    }
+    #hero .hero .hero--image .two {
+        position: absolute;
+        width: 60%;
+    }
+    #hero .hero .hero--block {
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        position: absolute;
+        width: 58%;
+        height: 104px;
+        border-radius: 80px;
+        background: #fff;
+        box-shadow: 2px 6px 5px 1px rgba(178, 178, 178, 0.25), -2px 2px 9px 1px rgba(83, 83, 83, 0.25);
+        bottom: 80px;
+    }
+    #hero .hero .hero--block .hero--block__input input {
+        width: 130px;
+    }
+    #hero .hero .hero--block button {
+        padding: 10px 35px;
+    }
+    #hero .hero .hero--image {
+        width: 649px;
+        height: 510px;
+    }
+    #hero .hero .hero--image .one {
+        position: absolute;
+        top: 50px;
+        left: 9px;
+        animation: floatingAnimation 3.5s ease-in-out infinite;
+        width: 35%;
+    }
+    #hero .hero .hero--image .four {
+        width: 35%;
+    }
+    #hero .hero .video-container {
+        width: 63px;
+        bottom: 237px;
+        left: 346px;
+        rotate: 80deg;
+    }
+  }
+  
+
+  @media (max-width: 870px){
+    #hero .hero .hero--block {
+        height: 165px;
+        border-radius: 80px;
+        background: #fff;
+        box-shadow: 2px 6px 5px 1px rgba(178, 178, 178, 0.25), -2px 2px 9px 1px rgba(83, 83, 83, 0.25);
+        bottom: 9px;
+    }
+    #hero .hero .hero--block {
+        height: 165px;
+        bottom: 9px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #hero .hero .video-container {
+        bottom: 214px;
+        left: 323px;
+    }
+    #hero .hero .hero--title h1 {
+        font-size: 37px;
+        width: 339px;
+    }
+  }
+
+  @media (max-width: 850px){
+    #hero .hero .hero--image {
+        width: 649px;
+        height: 466px;
+    }
+    #hero .hero .hero--title p {
+        line-height: 133.336%;
+        width: 256px;
+    }
+    #hero .hero .video-container {
+        bottom: 192px;
+        left: 286px;
+    }
+    #hero .hero .hero--block .hero--block__input input {
+        width: 130px;
+        font-size: 13px;
+    }
+  }
+  @media (max-width: 690px){
+    #hero .hero .hero--image {
+        width: 90%;
+        height: 500px;
+    }
+#hero .hero .hero--image .three {
+    position: absolute;
+    top: 0;
+    right: -29px;
+    width: 45%;
+}
+#hero .hero .hero--image .two {
+    right: -29px;
+    width: 45%;
+}
+#hero .hero{
+    flex-direction: column;
+}
+#hero {
+    padding: 15px 0;
+    position: relative;
+}
+#hero .hero .hero--block {
+    border-radius: 80px;
+    background: #fff;
+    box-shadow: 2px 6px 5px 1px rgba(178, 178, 178, 0.25), -2px 2px 9px 1px rgba(83, 83, 83, 0.25);
+    height: 295px;
+    bottom: -270px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    flex-direction: column;
+}
+#hero .hero .video-container {
+    display: none;
+}
+#hero .hero .hero--block .hero--block__input {
+    display: flex;
+    align-items: flex-start;
+    /* flex-direction: column; */
+    width: 350px;
+}
+#hero .hero .hero--title h1 {
+    font-size: 39px;
+    width: 90%;
+    text-align: center;
+}
+#hero .hero .hero--title p {
+    line-height: 133.336%;
+    width: 95%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+#hero .hero .hero--image .four {
+    width: 35%;
+    bottom: 10px;
+}
+  }
+  @media (max-width: 460px){
+    #hero .hero .hero--image {
+        width: 95%;
+        height: 420px;
+    }
+        #hero .hero .hero--image .three {
+            top: 8px;
+        right: 5px;
+        width: 50%;
+    }
+    #hero .hero .hero--image .two {
+        width: 50%;
+        left: 0;
+    }
+    
+    #hero .hero .hero--block .hero--block__input {
+        display: flex;
+        align-items: flex-start;
+        width: 305px;
+    }
+    #hero .hero .hero--block {
+        height: 295px;
+        bottom: -340px;
+        width: 90%;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 340px){
+    
+    #hero .hero .hero--image {
+        width: 95%;
+        height: 370px;
+    }
+}
