@@ -45,3 +45,15 @@
     }
   }
 }
+
+@media (max-width: 992px) {
+  #footer .footer--about__home .contact {
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  #footer .footer--about__home {
+    display: none;
+  }
+}

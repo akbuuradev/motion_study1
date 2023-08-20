@@ -123,18 +123,18 @@ const Contacts = () => {
                                     <rect width="56" height="56" rx="28" fill="#E5EA00"/>
                                     <path
                                         d="M28.5771 31.0701C28.745 32.3354 28.3429 33.662 27.3706 34.6343L23.5819 38.423C21.9237 40.0811 19.2353 40.0811 17.5771 38.423C15.919 36.7648 15.919 34.0764 17.5771 32.4182L21.3658 28.6295C22.3381 27.6572 23.6647 27.255 24.93 27.423M27.4232 24.9297C27.2553 23.6644 27.6575 22.3379 28.6298 21.3656L32.4185 17.5769C34.0766 15.9187 36.765 15.9187 38.4232 17.5769C40.0814 19.235 40.0814 21.9235 38.4232 23.5816L34.6345 27.3703C33.6622 28.3426 32.3357 28.7448 31.0703 28.5768M24.93 31.0701L31.0703 24.9297"
-                                        stroke="#212121" stroke-width="1.3" stroke-linecap="square"/>
+                                        stroke="#212121" strokeWidth="1.3" strokeLinecap="square"/>
                                 </svg>
                             </div>
                             <div className="application--left__info--main">
                                 <div className="application--left__info--main__block">
                                     <h2>Contact Info</h2>
                                     <div className="application--left__info--main__block--phone">
-                                        <MdPhoneInTalk className="application--left__info--main__block--phone__icon"/>
+                                        <h4 className="application--left__info--main__block--phone__icon"><MdPhoneInTalk/></h4>
                                         <h3>+996 500 34 84 39</h3>
                                     </div>
                                     <div className="application--left__info--main__block--email">
-                                        <TfiEmail className="application--left__info--main__block--email__icons"/>
+                                       <h4 className="application--left__info--main__block--email__icons"> <TfiEmail/></h4>
                                         <h3>motionweb312@gmail.com</h3>
                                     </div>
                                     <div className="application--left__info--main__block--plane">
@@ -144,9 +144,9 @@ const Contacts = () => {
                                         <BiLogoInstagramAlt/>
                                     </div>
                                     <div className="application--left__info--main__block--card">
-                                        <iframe
+                                        <iframe className="iframe"
                                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.670015518184!2d74.58255517583908!3d42.87980860210774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec9ba3daadfbb%3A0x4e7a5fa037f5fd93!2sMotion%20Web%20IT%20academy!5e0!3m2!1sru!2skg!4v1691908143384!5m2!1sru!2skg"
-                                            width="400" height="250" allowFullScreen="" loading="lazy"
+                                                allowFullScreen="" loading="lazy"
                                             referrerPolicy="no-referrer-when-downgrade"></iframe>
                                     </div>
                                 </div>

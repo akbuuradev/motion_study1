@@ -34,12 +34,12 @@ const Preloader = () => {
         scaleX: 0,
         scaleY: 0,
         opacity: 0,
-        duration: 0.5,
+        duration: 3.5,
         ease: "expo.easeOut",
       });
       gsap.to(".counter", {
         opacity: 0,
-        duration: 0.5,
+        duration: 3.5,
         ease: "expo.easeOut",
       });
     }
