@@ -8,7 +8,6 @@ const UniversityDetail = () => {
         <div>
             <University/>
             <TabsDetails/>
-
         </div>
     );
 };
