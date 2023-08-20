@@ -1,5 +1,5 @@
 #cambridge {
-  padding: 50px 0;
+  padding: 9.5% 0;
   .cambridge {
     h1 {
       color: var(--text-212121, #212121);
@@ -22,20 +22,14 @@
       text-transform: capitalize;
       margin: 55px 0 14px 0;
     }
-    span {
-      color: var(--text-1212, #010d39);
-      font-family: Montserrat, sans-serif;
-      font-size: 20px;
-      font-weight: 400;
-      text-transform: capitalize;
-    }
+
     h3 {
       color: #010d39;
       font-family: Montserrat, sans-serif;
       font-size: 32px;
       font-weight: 500;
       text-transform: capitalize;
-      margin-bottom: 15px;
+      margin: 20px 0;
     }
     p {
       color: #010d39;
@@ -44,7 +38,7 @@
       font-weight: 400;
       text-transform: capitalize;
       width: 1140px;
-      margin-bottom: 5px;
+      margin-bottom: 15px;
     }
     &--li {
       display: flex;
@@ -71,4 +65,27 @@
       }
     }
   }
+}
+@media (max-width: 1400px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 451px) {
+}
+@media (max-width: 400px) {
+}
+@media (max-width: 376px) {
+}
+@media (max-width: 320px) {
 }

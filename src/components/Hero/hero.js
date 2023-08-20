@@ -10,8 +10,34 @@ import "./hero.scss";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useLanguage } from "../../Data/LanguageContext";
 
 const Hero = () => {
+  const { language } = useLanguage();
+  const translations = {
+    en: {
+      explore: "Explore The World",
+      studyAbroad: "Study abroad with our help",
+      studyText:
+        "Study at the world's top universities and expand your horizons. Get the highest quality education and achieve success abroad.",
+      name: "NAME",
+      enterName: "|Enter your name",
+      phone: "PHONE",
+      enterPhone: "|Enter your phone",
+      contact: "Contact",
+    },
+    ru: {
+      explore: "Исследуйте мир",
+      studyAbroad: "Учеба за границей с нашей помощью",
+      studyText:
+        "Учись в лучших университетах мира и расширь свои горизонты. Получай качественное образование и добивайся успехов за границей.",
+      name: "ИМЯ",
+      enterName: "|Введите ваше имя",
+      phone: "ТЕЛЕФОН",
+      enterPhone: "|Введите ваш номер телефона",
+      contact: "Контакт",
+    },
+  };
   useEffect(() => {
     AOS.init();
 
@@ -31,17 +57,14 @@ const Hero = () => {
             data-aos-easing="ease-in-sine"
             className="hero--title"
           >
-            <h4>Explore The World</h4>
-            <h1>Study abroad with our help</h1>
-            <p>
-              Study at the world's top universities and expand your horizons.
-              Get the highest quality education and achieve success abroad.
-            </p>
+            <h4>{translations[language].explore}</h4>
+            <h1>{translations[language].studyAbroad}</h1>
+            <p>{translations[language].studyText}</p>
           </div>
           <div data-aos="zoom-in" className="hero--image">
             <div>
               <img src={one} alt="" className="one" />
-              <img  src={three} alt="" className="two" />
+              <img src={three} alt="" className="two" />
             </div>
             <div>
               <img src={two} alt="" className="three" />
@@ -51,15 +74,21 @@ const Hero = () => {
           <div className="hero--block">
             <img src={block1} alt="" />
             <div className="hero--block__input">
-              <span>NAME</span>
-              <input placeholder="|Enter your name" type="text" />
+              <span>{translations[language].name}</span>
+              <input
+                placeholder={translations[language].enterName}
+                type="text"
+              />
             </div>
             <img src={block2} alt="" />
             <div className="hero--block__input">
-              <span>NAME</span>
-              <input placeholder="|Enter your phone" type="text" />
+              <span>{translations[language].phone}</span>
+              <input
+                placeholder={translations[language].enterPhone}
+                type="text"
+              />
             </div>
-            <button>Contact</button>
+            <button>{translations[language].contact}</button>
           </div>
           <video autoPlay loop class="video-container">
             <source src={go} type="video/mp4"></source>
