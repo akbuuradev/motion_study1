@@ -8,74 +8,228 @@
   right: 0;
   left: 0;
   background: #ffffff;
+
+
   .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    &--nav {
-      display: flex;
-      gap: 60px;
-      align-items: center;
 
 
 
-      &__item {
-        position: relative;
 
-        &:hover:after {
-          content: '';
-          position: absolute;
-          opacity: 1;
-          width: 8px;
-          height: 8px;
-          background: red;
-          border-radius: 50%;
-          bottom: -10px;
-          left: 50%;
-          transform: translateX(-50%);
-        }
-        &.active:before{
-          content: '';
-          position: absolute;
-          opacity: 1;
-          width: 8px;
-          height: 8px;
-          background: red;
-          border-radius: 50%;
-          bottom: -10px;
-          left: 50%;
-          transform: translateX(-50%);
+      &--title {
+        display: flex;
+        &__nav {
+          display: flex;
+          gap: 60px;
+          align-items: center;
+
+          .icon {
+            color: gray;
+          }
+
+          &--item {
+            position: relative;
+
+            &:hover:after {
+              content: '';
+              position: absolute;
+              opacity: 1;
+              width: 8px;
+              height: 8px;
+              background: red;
+              border-radius: 50%;
+              bottom: -10px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+
+            &.active:before {
+              content: '';
+              position: absolute;
+              opacity: 1;
+              width: 8px;
+              height: 8px;
+              background: red;
+              border-radius: 50%;
+              bottom: -10px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+
+          &__inputs {
+            border: 1px solid gray;
+          }
+
+          &--select {
+            margin: 0 0 0 40px;
+          }
         }
       }
-      &__inputs {
-        border: 1px solid gray;
-      }
 
-      &__select {
-        margin: 0 0 0 40px;
+    &--men{
+      display: none;
+      &__div{
+        position: absolute;
+        z-index: -1;
+        margin-left: -107px;
+        margin-top: -47px;
+        width: 154px;
+        height: 227px;
+        border-radius: 20px;
+        background: green;
+        &--nav{
+          margin-top: 45px;
+          margin-left: 10px;
+          .h1{
+            margin: 10px 10px ;
+            &:hover{
+              position: relative;
+              &::before{
+                content: '';
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                background-color: rgba(255, 0, 0, 0.66);
+                border-radius: 50%;
+                left: 65px;
+                top: 50%;
+                transform: translateY(-50%);
+              }
+            }
+          }
+          .h2{
+            margin: 10px 10px ;
+            &:hover{
+              position: relative;
+              &::before{
+                content: '';
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                background-color: rgba(255, 0, 0, 0.66);
+                border-radius: 50%;
+                left: 90px;
+                top: 50%;
+                transform: translateY(-50%);
+              }
+            }
+          }
+          .h3{
+            margin: 10px 10px ;
+            &:hover{
+              position: relative;
+              &::before{
+                content: '';
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                background-color: rgba(255, 0, 0, 0.66);
+                border-radius: 50%;
+                left: 125px;
+                top: 50%;
+                transform: translateY(-50%);
+              }
+            }
+          }
+          .h4{
+            margin: 10px 10px ;
+            &:hover{
+              position: relative;
+              &::before{
+                content: '';
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                background-color: rgba(255, 0, 0, 0.66);
+                border-radius: 50%;
+                left: 80px;
+                top: 50%;
+                transform: translateY(-50%);
+              }
+            }
+          }
+        }
       }
     }
-      }
 
-  .search--wrap {
-    .search--content {
-      display: flex;
-      flex-direction: column;
-      row-gap: 7px;
-      background: #ffffff;
-      border-radius: 8px;
-      width: 203px;
-      padding: 25px 0 15px 20px;
-      position: absolute;
-      top: 36px;
+      .search--wrap {
+        .search--content {
+          display: flex;
+          flex-direction: column;
+          row-gap: 7px;
+          background: #ffffff;
+          border-radius: 8px;
+          width: 203px;
+          padding: 25px 0 15px 20px;
+          position: absolute;
+          top: 36px;
 
-      &__item {
-        font-weight: 500;
-        font-size: 16px;
-        color: #212121;
+          &__item {
+            font-weight: 500;
+            font-size: 16px;
+            color: #212121;
+          }
+        }
       }
     }
   }
 
-    }
+@media (max-width: 1440px) {
+  .container {
+    width: 90%;
+  }
+
+
+}
+
+@media (max-width: 1024px) {
+  #header .header--title__nav {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 992px) {
+  #header .header--title__nav {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+  }
+  .w-full {
+    width: 85%;
+  }
+  #header .header--title__nav--select {
+    margin: 0 0 0 -12px;
+  }
+}
+
+@media (max-width: 768px) {
+  #header .header--title__nav {
+    display: none;
+  }
+  #header .header--title__nav--select {
+    display: none;
+  }
+  #header {
+      display: flex;
+  }
+  #header .header--men {
+    display: block;
+  }
+  #header .header--men__div {
+    position: absolute;
+    z-index: -1;
+    margin-left: -172px;
+    margin-top: -44px;
+    width: 219px;
+    height: 295px;
+    border-radius: 20px;
+    background: green;
+  }
+}
 

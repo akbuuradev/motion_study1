@@ -1,5 +1,5 @@
 #other {
-  padding: 50px;
+  padding: 9.5% 0;
   .other {
     h1 {
       color: var(--text-212121, #212121);
@@ -28,6 +28,8 @@
       font-weight: 500;
       line-height: 28px; /* 140% */
       text-transform: capitalize;
+      width: 1100px;
+      margin: 25px 0;
     }
     li {
       color: var(--text-333333, #333);
@@ -35,7 +37,39 @@
       font-weight: 400;
       line-height: 28px; /* 140% */
       text-transform: capitalize;
-      margin-top: 20px;
+      margin-top: 25px;
+      width: 1100px;
+    }
+    .other--li {
+      color: #333;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 28px; /* 140% */
+      text-transform: capitalize;
+      width: 1100px;
     }
   }
+}
+@media (max-width: 1400px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 451px) {
+}
+@media (max-width: 400px) {
+}
+@media (max-width: 376px) {
+}
+@media (max-width: 320px) {
 }
