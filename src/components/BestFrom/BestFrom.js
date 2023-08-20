@@ -72,6 +72,44 @@ const BestFrom = () => {
       <div className="container">
         <div className="from">
           <div className="from--title">
+            <h1>This is why we are best from others</h1>
+            <p>
+              We provide full support at all stages of preparation, including
+              assistance in filing documents and preparing for an interview.
+              Contact us and start your journey to higher education abroad!
+            </p>
+            <img src={best} alt="" className="from--blocks__block--photo" />
+          </div>
+          <div className="from--blocks">
+            <div className="from--blocks__block">
+              <img src={fblock1} alt="" />
+              <h3>1000+ Partners</h3>
+              <p>
+                over 1000+ partners worldwide enter the best universities in the
+                world
+              </p>
+            </div>
+            <div className="from--blocks__block">
+              <img src={fblock2} alt="" />
+              <h3>Experts</h3>
+              <p>We are experts in our field. help you reach new heights</p>
+            </div>
+            <div className="from--blocks__block">
+              <img src={fblock3} alt="" />
+              <h3>Time</h3>
+              <p>
+                we will help you save your time and nerves when applying to the
+                best university.
+              </p>
+            </div>
+            <div className="from--blocks__block">
+              <img src={fblock4} alt="" />
+              <h3>Affrodable Prices</h3>
+              <p>
+                reasonable prices will always please you. sign up for a
+                consultation
+              </p>
+            </div>
             <h1>{translations[language].title}</h1>
             <p>{translations[language].description}</p>
             <img src={best} alt="" className="from--blocks__block--photo" />

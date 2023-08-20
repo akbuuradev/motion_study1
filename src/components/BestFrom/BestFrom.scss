@@ -55,3 +55,58 @@
     }
   }
 }
+
+
+
+
+@media (max-width: 1140px) {
+  #from .from--title h1 {
+    color: #212121;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    width: 467px;
+}
+#from .from--title p {
+  padding: 40px 0 40px 0;
+  font-size: 19px;
+  width: 420px;
+}
+#from .from--blocks__block {
+  width: 205px;
+  height: 277px;
+  font-size: 15px;
+}
+
+}
+@media (max-width: 1024px) {
+  #from .from {
+     display: flex; 
+     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 82px;
+}
+}
+@media (max-width: 700px) {
+  #from {
+    padding: 320px 0;
+  }
+    #from .from--blocks__block--photo {
+      width: 95%;
+}
+#from .from--title p {
+    width: 90%;
+}
+#from .from--title h1 {
+  font-size: 40px;
+  width: 95%;
+}
+}
+@media (max-width: 500px) {
+#from {
+    padding: 420px 0;
+}
+}
