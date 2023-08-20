@@ -1,16 +1,37 @@
 import React from "react";
 import "./Slider.scss";
+import Slider from "react-slick";
+import { useLanguage } from "../../Data/LanguageContext";
 
-function Slider() {
+function Sliderone() {
+  const { language } = useLanguage();
+  let settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 1300,
+    cssEase: "linear",
+  };
+  const translations = {
+    en: {
+      title: "Video testimonials from our students",
+    },
+    ru: {
+      title: "Видео-отзывы от наших студентов",
+    },
+  };
   return (
     <div id="slider">
       <div className="container">
         <div className="slider">
-          <h1>Video testimonials from our students</h1>
-          <div className="slider--block">
-            <div className="slider--block__video">
+          <h1>{translations[language].title}</h1>
+          <Slider className="you" {...settings}>
+            <div className="slider--video">
               <iframe
-                width="560"
+                width="450"
                 height="340"
                 src="https://www.youtube.com/embed/M_pclb-58ZY"
                 title="YouTube video player"
@@ -19,9 +40,9 @@ function Slider() {
                 allowfullscreen
               ></iframe>
             </div>
-            <div className="slider--block__video">
+            <div className="slider--video">
               <iframe
-                width="560"
+                width="450"
                 height="340"
                 src="https://www.youtube.com/embed/NErrGZ64OdE"
                 title="YouTube video player"
@@ -30,9 +51,9 @@ function Slider() {
                 allowfullscreen
               ></iframe>
             </div>
-            <div className="slider--block__video">
+            <div className="slider--video">
               <iframe
-                width="560"
+                width="450"
                 height="340"
                 src="https://www.youtube.com/embed/9EmO9_MK1gQ"
                 title="YouTube video player"
@@ -41,9 +62,9 @@ function Slider() {
                 allowfullscreen
               ></iframe>
             </div>
-            <div className="slider--block__video">
+            <div className="slider--video">
               <iframe
-                width="560"
+                width="450"
                 height="340"
                 src="https://www.youtube.com/embed/xhF66hfRbmw"
                 title="YouTube video player"
@@ -52,22 +73,23 @@ function Slider() {
                 allowfullscreen
               ></iframe>
             </div>
-            <div className="slider--block__video">
+            <div className="slider--video">
               <iframe
-                width="560"
+                width="450"
                 height="340"
                 src="https://www.youtube.com/embed/IK6e1SFCdow"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowfullscree
+                n
               ></iframe>
             </div>
-          </div>
+          </Slider>
         </div>
       </div>
     </div>
   );
 }
 
-export default Slider;
+export default Sliderone;
