@@ -204,7 +204,7 @@ const Contacts = () => {
                     <h3>+996 500 34 84 39</h3>
                   </div>
                   <div className="application--left__info--main__block--email">
-                    <TfiEmail className="application--left__info--main__block--email__icons" />
+                    <h4><TfiEmail className="application--left__info--main__block--email__icons" /></h4>
                     <h3>motionweb312@gmail.com</h3>
                   </div>
                   <div className="application--left__info--main__block--plane">
