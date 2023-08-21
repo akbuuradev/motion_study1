@@ -76,29 +76,25 @@ const Hero = () => {
             <div style={{display: "flex"}}>
             <img src={block1} alt="" />
               <div style={{display: "flex",flexDirection: "column"}}>
-              <span>NAME</span>
-              <input placeholder="|Enter your name" type="text" />
+                <span>{translations[language].name}</span>
+                <input
+                    placeholder={translations[language].enterName}
+                    type="text"
+                />
               </div>
             </div>
-              <span>{translations[language].name}</span>
-              <input
-                placeholder={translations[language].enterName}
-                type="text"
-              />
             </div>
             <div className="hero--block__input">
             <div style={{display: "flex"}}>
             <img src={block2} alt="" />
-              <div style={{display: "flex",flexDirection: "column"}}>
-              <span>NAME</span>
-              <input placeholder="|Enter your phone" type="text" />
-              </div>
-            </div>
+            <div style={{display: "flex",flexDirection: "column"}}>
               <span>{translations[language].phone}</span>
               <input
                 placeholder={translations[language].enterPhone}
                 type="text"
               />
+            </div>
+            </div>
             </div>
             <button>{translations[language].contact}</button>
           </div>
