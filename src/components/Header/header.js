@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Motion from "./../../images/Vector.svg";
-import { Link, NavLink } from "react-router-dom";
+import {Link, NavLink, useNavigate} from "react-router-dom";
 import "./header.scss";
 import OutsideClickHandler from "react-outside-click-handler";
 import { FaPhoneVolume, FaTelegramPlane } from "react-icons/fa";
@@ -8,16 +8,76 @@ import { AiFillInstagram } from "react-icons/ai";
 import { CgMail } from "react-icons/cg";
 import { FiMenu, FiX } from "react-icons/fi";
 import {useLanguage} from "../../Data/LanguageContext";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
+import {data} from "../../Data/countData";
 
-const Header = ({el}) => {
+const Header = () => {
     const [searchContent, setSearchContent] = useState(false);
     const [burger, setBurger] = useState(false);
     const [color, setColor] = useState(1);
+    const [todo,setTodo] = useState("")
     const {language, changeLanguage} = useLanguage()
     const dispatch = useDispatch()
+    const {detail} = useSelector(s => s)
+
+    const fifa = data.find(e => e.name.toLowerCase().includes(todo) || e.name.toUpperCase().includes(todo))
+    const filter = data.filter((item) => item.name.toLowerCase().includes(todo) || item.name.toUpperCase().includes(todo))
+
+
+    const nav = useNavigate()
+    const getDetail = ( el) => {
+        nav("/uni")
+        dispatch({type: "DATA",payload: el})
+    }
+    console.log("data",data)
+    console.log("detail",detail)
+
+
+    const translations = {
+        en: {
+            home: "Home",
+            about: "About Us",
+            study: "Study Abroad",
+            contacts: "Contacts",
+            searchPlaceholder: "Search...",
+            countries: {
+                unitedStates: "United States",
+                korea: "Korea",
+                australia: "Australia",
+                malaysia: "Malaysia",
+                germany: "Germany",
+            },
+            languageOptions: {
+                en: "EN",
+                ru: "RU",
+            },
+        },
+        ru: {
+            home: "Главная",
+            about: "О нас",
+            study: "Обучение за границей",
+            contacts: "Контакты",
+            searchPlaceholder: "Поиск...",
+            countries: {
+                unitedStates: "США",
+                korea: "Корея",
+                australia: "Австралия",
+                malaysia: "Малайзия",
+                germany: "Германия",
+            },
+            languageOptions: {
+                en: "EN",
+                ru: "RU",
+            },
+        },
+    };
+
+
+
+
 
     return (
+
         <div id="header">
             <div className="container">
                 <div className="header">
@@ -25,16 +85,16 @@ const Header = ({el}) => {
                     <div className="header--title">
                         <div className="header--title__nav">
                             <NavLink onClick={() => window.scroll(0, 0)} className="header--title__nav--item" to="/">
-                                <span>Home</span>
+                                <span>{translations[language].home}</span>
                             </NavLink>
                             <NavLink onClick={() => window.scroll(0, 0)} className="header--title__nav--item" to="/about">
-                                <span>About Us</span>
+                                <span>{translations[language].about}</span>
                             </NavLink>
                             <NavLink onClick={() => window.scroll(0, 0)} className="header--title__nav--item" to="/study">
-                                <span>Study Abroad</span>
+                                <span>{translations[language].study}</span>
                             </NavLink>
                             <a onClick={() => window.scroll(0, 3370)} className="header--title__nav--item">
-                                <span>Contacts</span>
+                                <span>{translations[language].contacts}</span>
                             </a>
                             <Link to={"/united"} onClick={() => setSearchContent(true)} className="flex md:order-2">
                                 <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search"
@@ -45,7 +105,7 @@ const Header = ({el}) => {
                                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
                                               strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                                     </svg>
-                                    <span className="sr-only">Search</span>
+                                    <span className="sr-only">{translations[language].searchPlaceholder}</span>
                                 </button>
                                 <div className="relative hidden md:block">
                                     <div
@@ -55,23 +115,24 @@ const Header = ({el}) => {
                                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
                                                   strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                                         </svg>
-                                        <span className="sr-only">Search icon</span>
+                                        <span className="sr-only">{translations[language].searchPlaceholder}</span>
                                     </div>
-                                    <input type="text"  id="search-navbar" onChange={(e) => dispatch({type: "VALUE", payload: el})}
+                                    <input type="text"  id="search-navbar" onChange={(e) => setTodo(e.target.value)}
                                            className="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                           placeholder="Search..."/>
+                                           placeholder={translations[language].searchPlaceholder}/>
                                     { searchContent && (
                                         <OutsideClickHandler
                                             onOutsideClick={() => setSearchContent(false)}
                                         >
-                                            <div className="search-wrap">
-                                                <div className="search-content">
-                                                    <NavLink to={'#'} className="search-content_item">United States</NavLink>
-                                                    <NavLink to={'#'} className="search-content_item">Korea</NavLink>
-                                                    <NavLink to={'#'} className="search-content_item">Australia</NavLink>
-                                                    <NavLink to={'#'} className="search-content_item">Malaysia</NavLink>
-                                                    <NavLink to={'#'} className="search-content_item">Germany</NavLink>
-                                                </div>
+                                            <div  className="search-wrap" style={{display: fifa ? "block" : "none"}}>
+                                                {
+                                                    todo &&
+                                                    filter.map(el => (
+                                                        <div className="search-content">
+                                                            <h4 onClick={() =>  getDetail(el)}>{el.name}</h4>
+                                                        </div>
+                                                            ))
+                                                }
                                             </div>
                                         </OutsideClickHandler>
                                     )}
@@ -94,10 +155,10 @@ const Header = ({el}) => {
                         )}
                         <div style={{ display: burger ? 'none' : 'block' }} className="header--men__div">
                             <nav className="header--men__div--nav">
-                                <NavLink to={"/"}><h4 style={{ color: 'black' }} className="h1">Home</h4></NavLink>
-                                <NavLink to={"/about"}><h4 style={{ color: 'black' }} className="h2">About Us</h4></NavLink>
-                                <NavLink to={"/study"}><h4 style={{ color: 'black' }} className="h3">Study Abroad</h4></NavLink>
-                                <NavLink to={"/contacts"}><h4 style={{ color: 'black' }} className="h4">Contacts</h4></NavLink>
+                                <NavLink onClick={() => (burger ? setBurger(false) : setBurger(true))} to={"/"}><h4 style={{ color: 'black' }} className="h1">Home</h4></NavLink>
+                                <NavLink onClick={() => (burger ? setBurger(false) : setBurger(true))} to={"/about"}><h4 style={{ color: 'black' }} className="h2">About Us</h4></NavLink>
+                                <NavLink onClick={() => (burger ? setBurger(false) : setBurger(true))} to={"/study"}><h4 style={{ color: 'black' }} className="h3">Study Abroad</h4></NavLink>
+                                <NavLink onClick={() => (burger ? setBurger(false) : setBurger(true))} to={"/contacts"}><h4 style={{ color: 'black' }} className="h4">Contacts</h4></NavLink>
                                 <div style={{ display: 'flex', justifyContent: 'space-between', width: '116px', marginTop: '10px', fontSize: '20px', marginLeft: '10px' }} >
                                     <h5 style={{ color: color === 1 ? 'black' : '#7E7B7B', cursor: "pointer", borderBottom: color === 1 ? '2px solid #5609BB' : '' }} onClick={() => setColor(1)}>EN</h5>
                                     <h5 style={{ color: color === 2 ? 'black' : '#7E7B7B', cursor: "pointer", borderBottom: color === 2 ? '2px solid #5609BB' : '' }} onClick={() => setColor(2)}>RU</h5>

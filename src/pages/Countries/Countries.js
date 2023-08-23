@@ -1,24 +1,20 @@
 import React from "react";
 import "./Countries.scss";
-import america from "../../images/america.png";
-import greatBritan from "../../images/greatBritan.png";
-import austria from "../../images/ausrtra.png";
-import germany from "../../images/germany.png";
-import holland from "../../images/holland.png";
-import ireland from "../../images/Ireland.png";
-import spain from "../../images/Spain.png";
-import italy from "../../images/Italy.png";
-import canada from "../../images/canada.png";
-import cyprus from "../../images/cyprus.png";
-import China from "../../images/china.png";
-import latvia from "../../images/latvia.png";
-import {Link} from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import {useLanguage} from "../../Data/LanguageContext";
+import { data} from "../../Data/countData";
+import {useDispatch,} from "react-redux";
 
 
 const Countries = ({el}) => {
     const {language} = useLanguage();
 
+    const dispatch = useDispatch()
+
+    const nav = useNavigate()
+
+
+    // const {todo} = useSelector(s => s)
 
     const translations = {
         en: {
@@ -85,116 +81,58 @@ const Countries = ({el}) => {
             flag12: "Америка",
         },
     };
+
     return (
 
-        <section id="flag">
-            <div className="container">
-                <h1>{translations[language].title}</h1>
-                <div className="flag">
-                    <div className="flag--select">
-                        <select>
-                            <option value="#">{translations[language].option1}</option>
-                            <option value="#">{translations[language].option2}</option>
-                            <option value="#">{translations[language].option3}</option>
-                            <option value="#">{translations[language].option4}</option>
-                            <option value="#">{translations[language].option5}</option>
-                        </select>
-
-                        <select name="" id="">
-                            <option value="#">{translations[language].option6}</option>
-                            <option value="#">{translations[language].option7}</option>
-                            <option value="#">{translations[language].option8}</option>
-                            <option value="#">{translations[language].option9}</option>
-                            <option value="#">{translations[language].option10}</option>
-                            <option value="#">{translations[language].option11}</option>
-                        </select>
-                        <div className="flag--select__options">
-                            <select name="" id="">
-                                <option value="#">{translations[language].option12}</option>
-                                <option value="#">{translations[language].option13}</option>
-                                <option value="#">{translations[language].option14}</option>
-                                <option value="#">{translations[language].option15}</option>
-                                <option value="#">{translations[language].option16}</option>
+            <section id="flag">
+                <div className="container">
+                    <h1>{translations[language].title}</h1>
+                    <div className="flag">
+                        <div className="flag--select">
+                            <select>
+                                <option value="#">{translations[language].option1}</option>
+                                <option value="#">{translations[language].option2}</option>
+                                <option value="#">{translations[language].option3}</option>
+                                <option value="#">{translations[language].option4}</option>
+                                <option value="#">{translations[language].option5}</option>
                             </select>
+
+                            <select name="" id="">
+                                <option value="#">{translations[language].option6}</option>
+                                <option value="#">{translations[language].option7}</option>
+                                <option value="#">{translations[language].option8}</option>
+                                <option value="#">{translations[language].option9}</option>
+                                <option value="#">{translations[language].option10}</option>
+                                <option value="#">{translations[language].option11}</option>
+                            </select>
+                            <div className="flag--select__options">
+                                <select name="" id="">
+                                    <option value="#">{translations[language].option12}</option>
+                                    <option value="#">{translations[language].option13}</option>
+                                    <option value="#">{translations[language].option14}</option>
+                                    <option value="#">{translations[language].option15}</option>
+                                    <option value="#">{translations[language].option16}</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div className="flag--block">
-                        <Link to={"/united"}>
-                            <div className="flag--block__one">
-                                <img src={america} alt="img"/>
-                                <h2>{translations[language].flag12}</h2>
+                        <div className="flag--block">
+                            <div className="flag--block__title">
+                                {
+                                    data.map((el) => (
+                                        <div onClick={() => {
+                                            dispatch({type: "COUNTRY", payload: el.id})
+                                            nav(`/${el.path}`)
+                                        window.scroll(0,0) }} className="flag--block__title--one">
+                                            <img src={el.flagImage} alt=""/>
+                                            <h2>{el.name}</h2>
+                                        </div>
+                                    ))
+                                }
                             </div>
-                        </Link>
-                        <Link to={"/britain"}>
-                            <div className="flag--block__one">
-                                <img src={greatBritan} alt="img"/>
-                                <h2>{translations[language].flag1}</h2>
-                            </div>
-                        </Link>
-                        <Link to={"/vienna"}>
-                            <div className="flag--block__one">
-                                <img src={austria} alt="img"/>
-                                <h2>{translations[language].flag2}</h2>
-                            </div>
-                        </Link>
-                        <Link to={"/berlin"}>
-                            <div className="flag--block__one">
-                                <img src={germany} alt="img"/>
-                                <h2>{translations[language].flag3}</h2>
-                            </div>
-                        </Link>
-                        <Link to={"/delft"}>
-                            <div className="flag--block__one">
-                                <img src={holland} alt="img"/>
-                                <h2>{translations[language].flag4}</h2>
-                            </div>
-                        </Link>
-                        <Link to={"/dublin"}>
-                            <div className="flag--block__one">
-                                <img src={ireland} alt="img"/>
-                                <h2>{translations[language].flag5}</h2>
-                            </div>
-                        </Link>
-                        <Link to={"/spain"}>
-                            <div className="flag--block__one">
-                                <img src={spain} alt="img"/>
-                                <h2>{translations[language].flag6}</h2>
-                            </div>
-                        </Link>
-                        <Link to={"/rome"}>
-                            <div className="flag--block__one">
-                                <img src={italy} alt="img"/>
-                                <h2>{translations[language].flag7}</h2>
-                            </div>
-                        </Link>
-                        <Link to={"#"}>
-                            <div className="flag--block__one">
-                                <img src={canada} alt="img"/>
-                                <h2>{translations[language].flag8}</h2>
-                            </div>
-                        </Link>
-                        <Link to={"/paphos"}>
-                            <div className="flag--block__one">
-                                <img src={cyprus} alt="img"/>
-                                <h2>{translations[language].flag9}</h2>
-                            </div>
-                        </Link>
-                        <Link to={"/hardin"}>
-                        <div className="flag--block__one">
-                            <img src={China} alt="img"/>
-                            <h2>{translations[language].flag10}</h2>
                         </div>
-                        </Link>
-                        <Link to={"/jelgava"}>
-                        <div className="flag--block__one">
-                            <img src={latvia} alt="img"/>
-                            <h2>{translations[language].flag11}</h2>
-                        </div>
-                        </Link>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
     );
 };
 

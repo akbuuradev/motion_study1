@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import dutchUniversitiesData from "../../Data/Holland";
 import {IoLocationOutline} from "react-icons/io5";
 import './delft.scss'
 
 const Delft = () => {
+
+    const [line, setLine] = useState(false)
+
     return (
         <div id="delft">
             <div className="container">
@@ -42,7 +45,7 @@ const Delft = () => {
                         </div>
                     </div>
                     {
-                        dutchUniversitiesData.map((el) => (
+                        dutchUniversitiesData.slice(line ? 0 : 5., line ? 5 : 10).map((el) => (
                             <div className="delft--leiden">
                                 <div className="delft--leiden__dutch">
                                     <img src={el.image} alt=""/>
@@ -61,6 +64,18 @@ const Delft = () => {
                                 </div>
                             </div>
                         ))
+                    }
+                    {
+                        <div className="popular--pages">
+                            {
+
+                                <div className="popular--pages__btn">
+                                    <button className="next" style={{background: line ? "#959aa2" : "black"}} onClick={() => setLine(false)}></button>
+                                    <button className="next" style={{background: line ? "black" : "#959aa2"}} onClick={() => setLine( true)}></button>
+                                </div>
+
+                            }
+                        </div>
                     }
                 </div>
             </div>

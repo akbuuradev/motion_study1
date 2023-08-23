@@ -38,6 +38,7 @@
               padding: 25px 0 15px 20px;
               position: absolute;
               top: 36px;
+              height: auto;
 
               &_item {
                 font-weight: 500;
@@ -53,7 +54,6 @@
 
           .header--title__nav--item {
             position: relative;
-            transition: 6s ease-in-out;
 
             &:hover:after {
               content: '';
@@ -65,7 +65,7 @@
               border-radius: 50%;
               bottom: -10px;
               left: 50%;
-              //transform: translateX(-50%);
+              transition: 6s ease-in-out;
             }
 
             &.active:before {
@@ -100,10 +100,12 @@
         z-index: -1;
         margin-left: -107px;
         margin-top: -47px;
-        width: 154px;
-        height: 227px;
+        width: 554px;
+        height: 627px;
         border-radius: 20px;
-        background: green;
+        background: white;
+        opacity: 0.9;
+        transition: transform 0.4s ease-in-out;
         &--nav{
           margin-top: 45px;
           margin-left: 10px;
@@ -118,7 +120,7 @@
                 height: 8px;
                 background-color: rgba(255, 0, 0, 0.66);
                 border-radius: 50%;
-                left: 65px;
+                left: -20px;
                 top: 50%;
                 transform: translateY(-50%);
               }
@@ -135,7 +137,7 @@
                 height: 8px;
                 background-color: rgba(255, 0, 0, 0.66);
                 border-radius: 50%;
-                left: 90px;
+                left: -20px;
                 top: 50%;
                 transform: translateY(-50%);
               }
@@ -152,7 +154,7 @@
                 height: 8px;
                 background-color: rgba(255, 0, 0, 0.66);
                 border-radius: 50%;
-                left: 125px;
+                left: -20px;
                 top: 50%;
                 transform: translateY(-50%);
               }
@@ -230,12 +232,17 @@
   #header .header--men__div {
     position: absolute;
     z-index: -1;
-    margin-left: -172px;
-    margin-top: -44px;
-    width: 219px;
-    height: 295px;
+    top: 72%;
+    right: 1%;
+    width: 419px;
+    height: 695px;
     border-radius: 20px;
-    background: green;
+    background: white;
+    font-size: 35px;
+  }
+  #header .header--men__div--nav {
+    margin-top: 99px;
+    margin-left: 40px;
   }
 }
 
