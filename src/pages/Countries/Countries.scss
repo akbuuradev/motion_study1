@@ -1,50 +1,52 @@
 #flag {
     padding: 100px 0;
   h1 {
-    color: var(#212121);
+    color: black;
     font-family: Gilroy, sans-serif;
     font-size: 48px;
     font-weight: 500;
-    margin: 0px 0 44px 15px;
+    margin: 0 0 44px 15px;
   }
   .flag {
     &--block {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      gap: 40px;
-      a{
-        color: #000;
-      }
-      &__one {
+      
+      &__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 40px;
+      &--one {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 235px;
+        width: 255px;
         height: 290px;
         border-radius: 14px;
         background: #fdfdfd;
-        box-shadow: 4.82119607925415px 7.713913440704346px 24.10597801208496px
-          0px rgba(0, 0, 0, 0.1);
+        box-shadow: 4.82119607925415px 7.713913440704346px 24.10597801208496px 0px rgba(0, 0, 0, 0.1);
         text-align: center;
         margin-top: 50px;
         padding-top: 25px;
         padding-bottom: 50px;
+        cursor: pointer;
+
         h2 {
-          color: var(#212121);
+          color: black;
           font-family: Montserrat, sans-serif;
           font-size: 24px;
           font-weight: 400;
           padding-top: 20px;
         }
+
         img {
           width: 172px;
           height: 172px;
         }
       }
     }
+  }
     &--select {
         display: flex;
         align-items: center;
@@ -67,5 +69,38 @@
         margin: 0 0 0 55px;
     }
     }
+  }
+}
+
+@media (max-width: 992px) {
+  #flag .flag--block__title--one {
+    width: 234px;
+  }
+  #flag .flag--block__title {
+    display: flex;
+    justify-content: center;
+  }
+  #flag .flag--select {
+    flex-wrap: wrap;
+  }
+
+}
+
+@media (max-width: 576px) {
+  #flag .flag--select__options {
+    margin: 30px 0 0 55px;
+  }
+}
+
+@media (max-width: 451px) {
+  #flag h1 {
+    color: black;
+    font-family: Gilroy, sans-serif;
+    font-size: 40px;
+  }
+  #flag .flag--select {
+    gap: 20px;
+    flex-direction: column;
+    align-items: start;
   }
 }

@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import irishUniversitiesData from "../../Data/Ireland";
 import {IoLocationOutline} from "react-icons/io5";
 import './dublin.scss'
 
 const Dublin = () => {
+
+    const [line, setLine] = useState(false)
+
     return (
         <div id="dublin">
             <div className="container">
@@ -42,7 +45,7 @@ const Dublin = () => {
                         </div>
                     </div>
                     {
-                        irishUniversitiesData.map((el) => (
+                        irishUniversitiesData.slice(line ? 0 : 5, line ? 5 : 10).map((el) => (
                             <div className="dublin--galway">
                                 <div className="dublin--galway__cork">
                                     <img src={el.image} alt=""/>
@@ -61,6 +64,18 @@ const Dublin = () => {
                                 </div>
                             </div>
                         ))
+                    }
+                    {
+                        <div className="popular--pages">
+                            {
+
+                                <div className="popular--pages__btn">
+                                    <button className="next" style={{background: line ? "#959aa2" : "black"}} onClick={() => setLine(false)}></button>
+                                    <button className="next" style={{background: line ? "black" : "#959aa2"}} onClick={() => setLine( true)}></button>
+                                </div>
+
+                            }
+                        </div>
                     }
                 </div>
             </div>

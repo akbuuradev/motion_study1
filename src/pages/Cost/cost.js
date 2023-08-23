@@ -1,6 +1,13 @@
 import React from 'react';
 import './cost.scss'
+import {data} from "../../Data/countData";
+import {useSelector} from "react-redux";
 const Cost = () => {
+
+    const {count, aboutCount} = useSelector(s => s)
+
+    const {dec, year, the} = data[count-1].about[aboutCount-1].details
+
     return (
         <div id="cost">
             <div className="container">

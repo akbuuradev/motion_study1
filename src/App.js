@@ -27,6 +27,8 @@ import Rome from "./main/Italy/rome";
 import Paphos from "./main/Cyprus/paphos";
 import Hardin from "./main/China/hardin";
 import Jelgava from "./main/Latvia/jelgava";
+import TabsDetails from "./pages/Tabs/tabsDetails";
+import University from "./pages/University/university";
 
 function App() {
   return (
@@ -47,16 +49,18 @@ function App() {
           <Route path={"/contacts"} element={<Contacts/>}/>
           <Route path={"/university_detail"} element={<UniversityDetail/>}/>
           <Route path={"/britain"} element={<Britain/>}/>
-          <Route path={"/vienna"} element={<Vienna/>}/>
-          <Route path={"/berlin"} element={<Berlin/>}/>
-          <Route path={"/delft"} element={<Delft/>}/>
-          <Route path={"/dublin"} element={<Dublin/>}/>
+          <Route path={"/austria"} element={<Vienna/>}/>
+          <Route path={"/germany"} element={<Berlin/>}/>
+          <Route path={"/holland"} element={<Delft/>}/>
+          <Route path={"/ireland"} element={<Dublin/>}/>
           <Route path={"/spain"} element={<Spain/>}/>
-          <Route path={"/rome"} element={<Rome/>}/>
-          <Route path={"/paphos"} element={<Paphos/>}/>
-          <Route path={"/hardin"} element={<Hardin/>}/>
-          <Route path={"/jelgava"} element={<Jelgava/>}/>
+          <Route path={"/italy"} element={<Rome/>}/>
+          <Route path={"/cyprus"} element={<Paphos/>}/>
+          <Route path={"/china"} element={<Hardin/>}/>
+          <Route path={"/latvia"} element={<Jelgava/>}/>
         </Routes>
+        {/*<University/>*/}
+        {/*<TabsDetails/>*/}
         <Footer/>
       </LanguageProvider>
     </div>

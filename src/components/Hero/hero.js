@@ -98,7 +98,7 @@ const Hero = () => {
             </div>
             <button>{translations[language].contact}</button>
           </div>
-          <video autoPlay loop class="video-container">
+          <video autoPlay loop muted class="video-container">
             <source src={go} type="video/mp4"></source>
           </video>
         </div>
