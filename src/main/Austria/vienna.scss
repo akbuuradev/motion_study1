@@ -9,6 +9,30 @@
   }
   .vienna {
     padding-bottom: 135px;
+
+    .popular--pages {
+
+      &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .next {
+          border-radius: 50%;
+          padding: 5px 5px;
+          font-size: 25px;
+          color: #FFFFFF;
+          margin: 0 20px;
+        }
+        .classic {
+          padding: 10px 20px;
+          background: #1aa2ee;
+          color: white;
+
+        }
+      }
+    }
+
     &--select {
       display: flex;
       align-items: center;

@@ -1,15 +1,24 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
 import './description.scss'
-import cost from "./../../images/cost.svg"
 import {LuCalendarCheck2} from "react-icons/lu";
 import {BsBank} from "react-icons/bs";
 import {BiSolidErrorCircle} from "react-icons/bi";
 import instagram from './../../images/Instagram.svg'
 import telegram from './../../images/Telegram.svg'
+import {data} from "../../Data/countData";
+import {useSelector} from "react-redux";
 
 
 const Description = () => {
+    const {count, aboutCount} = useSelector(state => state)
+
+    const {img, title, titles, normal, awards, bs,
+        tuition, fee, fees, application, entry,
+        registration, apply, fall, pre, time, line, cation,
+        studies, sept, now, spring, period, com, share, commence} = data[count-1].about[aboutCount-1].details.tabs[0].text
+    console.log(data[1].about[1].details)
+
+
     return (
         <div id="description">
             <div className="container">
@@ -17,87 +26,80 @@ const Description = () => {
                     <div className="description--time">
                             <div className="description--time__right">
                                 <div className="description--time__right--now">
-                                    <img src={cost} alt=""/>
+                                    <img src={img} alt=""/>
                                     <div className="description--time__right--now__share">
-                                        <h1>Landscape Design</h1>
-                                        <h2>University of Fashion and Design</h2>
+                                        <h1>{title}</h1>
+                                        <h2>{titles}</h2>
                                     </div>
                                 </div>
-                                <h3><span>Nominal duration:</span> 4.5 years(240 ECTS)</h3>
+                                <h3><span>Nominal duration:</span>{normal}</h3>
                                 <div className="description--time__right--awards">
                                     <h2>Awards:</h2>
-                                    <p><span>B.Sc.</span> (Professional Bachelor’s degree in Business Management, qualification: Business Manager or E-Business Manager)</p>
+                                    <p><span>{bs}</span>{awards}</p>
                                 </div>
                                 <div className="description--time__right--line"></div>
                                 <div className="description--time__right--tuition">
                                     <h2>Tuition fee:</h2>
-                                    <p>€1,400 per semester
-                                        US$1,502.87</p>
+                                    <p>{tuition}</p>
                                 </div>
                                 <div className="description--time__right--one">
                                     <h2>Application fee:</h2>
-                                    <p>€120 one-time <br/>
-                                        US$128.83</p>
+                                    <p>{application}</p>
                                 </div>
                                 <div className="description--time__right--base">
                                     <h2>Registration fee:</h2>
                                         <div className="description--time__right--base--vip">
-                                            <span>US$150 one-time</span>
-
-                                                <p>You need to choose student status:</p>
-                                               <p> Base – 150 USD</p>
-                                                <p>Standard – 500 USD</p>
-                                               <p> VIP – 900 USD</p>
-
-
+                                            {
+                                                registration.map((el) => (
+                                                    <p>{el}</p>
+                                                ))
+                                            }
                                         </div>
                                 </div>
                                 <div className="description--time__right--line"></div>
                                 <div className="description--time__right--high">
                                     <h2>Tuition fee:</h2>
                                     <div className="description--time__right--high__some">
-                                        <span>High school / secondary education (or higher)</span>
-                                        <p>Completed Secondary Education ( 12 years, in some countries 11 years)</p>
+                                        <span>{fee}</span>
+                                        <p>{fees}</p>
                                     </div>
                                 </div>
                                 <div className="description--time__right--entry">
                                     <h2>Entry qualication:</h2>
-                                    <p>The entry qualification documents are accepted in the following languages: English / Lithuanian.Often you can get a suitable transcript from your school. If this is not the case, you will need official translations along with verified copies of the original.</p>
+                                    <p>{entry}</p>
                                 </div>
                             </div>
                         <div className="description--time__left">
                             <div className="description--time__left--for">
-                                <h2><span>Apply Now!!!</span> Fall semester 2023</h2>
+                                <h2><span>{apply}</span>{fall}</h2>
                                 <div className="description--time__left--for__you">
                                     <LuCalendarCheck2 className="icons"/>
-                                    <p><span>Pre-deadline <br/></span>
-                                        20 Jun 2023, 23:59:59Eastern European Time
-                                        Please ask your manager in Baltic Center about correct deadline for your country</p>
+                                    <p><span>{pre}<br/></span>
+                                        {time}</p>
                                 </div>
                                 <div className="description--time__left--for__apple">
                                     <LuCalendarCheck2 className="icons"/>
-                                    <p><span>Application deadline</span>
-                                        31 Aug 2023, 23:59:59Eastern European Time
-                                        Autumn Intake</p>
+                                    <p><span>{line}</span>
+                                        {cation}</p>
                                 </div>
                                 <div className="description--time__left--for__commence">
                                     <BsBank  className="icons"/>
-                                    <p><span>Studies commence</span>
-                                        4 Sept 2023</p>
+                                    <p><span>{studies}</span>
+                                        {sept}</p>
                                 </div>
-                                    <h3><span>Apply Now!!!</span>  Spring semester 2023</h3>
+                                    <h3><span>{now}</span>{spring}</h3>
                                 <div className="description--time__left--for__has">
                                     <BiSolidErrorCircle className="icons"/>
-                                    <p>Application period has ended</p>
+                                    <p>{period}</p>
                                 </div>
                                 <div className="description--time__left--for__studies">
                                     <BsBank className="icons"/>
-                                    <p><span>Studies commence <br/></span>
-                                        6 Feb 2023</p>
+                                    <p><span>{com}<br/></span>
+                                        {commence} </p>
                                 </div>
                                 <div className="description--time__left--for__line"></div>
                                 <div className="description--time__left--for__share">
-                                    <h4>Share on:</h4>
+                                    <h4>{share}</h4>
                                     <div className="description--time__left--for__share--images">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
                                         <rect width="32.5517" height="32.5517" rx="16.2759" fill="#0DC143"/>

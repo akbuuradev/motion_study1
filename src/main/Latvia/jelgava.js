@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import latvianUniversitiesData from "../../Data/Latvia";
 import {IoLocationOutline} from "react-icons/io5";
 import './jelgava.scss'
 
 const Jelgava = () => {
+
+    const [line, setLine] = useState(false)
+
     return (
         <div id="jelgava">
             <div className="container">
@@ -42,7 +45,7 @@ const Jelgava = () => {
                         </div>
                     </div>
                     {
-                        latvianUniversitiesData.map((el) => (
+                        latvianUniversitiesData.slice(line ? 0 : 5, line ? 5 : 10).map((el) => (
                             <div className="jelgava--riga">
                                 <div className="jelgava--riga__title">
                                     <img src={el.image} alt=""/>
@@ -61,6 +64,18 @@ const Jelgava = () => {
                                 </div>
                             </div>
                         ))
+                    }
+                    {
+                        <div className="popular--pages">
+                            {
+
+                                <div className="popular--pages__btn">
+                                    <button className="next" style={{background: line ? "#959aa2" : "black"}} onClick={() => setLine(false)}></button>
+                                    <button className="next" style={{background: line ? "black" : "#959aa2"}} onClick={() => setLine( true)}></button>
+                                </div>
+
+                            }
+                        </div>
                     }
                 </div>
             </div>

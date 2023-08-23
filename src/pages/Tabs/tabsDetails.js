@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import './tabsDetails.scss'
-import Description from "../Description/description";
 import Cost from "../Cost/cost";
 import Photo from "../Photo/photo";
+import Description from "../Description/description";
 
 
 const TabsDetails = () => {

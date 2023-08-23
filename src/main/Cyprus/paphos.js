@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import cypriotUniversitiesData from "../../Data/Cyprus";
 import {IoLocationOutline} from "react-icons/io5";
 import './paphos.scss'
 
 const Paphos = () => {
+
+    const [line, setLine] = useState(false)
+
     return (
         <div id="paphos">
             <div className="container">
@@ -42,7 +45,7 @@ const Paphos = () => {
                         </div>
                     </div>
                     {
-                        cypriotUniversitiesData.map((el) => (
+                        cypriotUniversitiesData.slice(line ? 0 : 5, line ? 5 : 10).map((el) => (
                             <div className="paphos--lima">
                                 <div className="paphos--lima__nico">
                                     <img src={el.image} alt=""/>
@@ -61,6 +64,18 @@ const Paphos = () => {
                                 </div>
                             </div>
                         ))
+                    }
+                    {
+                        <div className="popular--pages">
+                            {
+
+                                <div className="popular--pages__btn">
+                                    <button className="next" style={{background: line ? "#959aa2" : "black"}} onClick={() => setLine(false)}></button>
+                                    <button className="next" style={{background: line ? "black" : "#959aa2"}} onClick={() => setLine( true)}></button>
+                                </div>
+
+                            }
+                        </div>
                     }
                 </div>
             </div>

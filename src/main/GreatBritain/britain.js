@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import britishUniversitiesData from "../../Data/GreatBritan";
 import "./britain.scss"
 import {IoLocationOutline} from "react-icons/io5";
 
 const Britain = () => {
+
+    const [line, setLine] = useState(false)
+
     return (
         <div id="britain">
             <div className="container">
@@ -43,7 +46,7 @@ const Britain = () => {
                     </div>
                     <div>
                         {
-                            britishUniversitiesData.map((el) => (
+                            britishUniversitiesData.slice(line ? 0 : 5, line ? 5 : 10).map((el) => (
                                 <div className="britain--great">
                                     <div className="britain--great__riga justify-between">
                                         <img src={el.image} alt={el.name}/>
@@ -62,6 +65,18 @@ const Britain = () => {
                                     </div>
                                 </div>
                             ))
+                        }
+                        {
+                            <div className="popular--pages">
+                                {
+
+                                    <div className="popular--pages__btn">
+                                        <button className="next" style={{background: line ? "#959aa2" : "black"}} onClick={() => setLine(false)}></button>
+                                        <button className="next" style={{background: line ? "black" : "#959aa2"}} onClick={() => setLine( true)}></button>
+                                    </div>
+
+                                }
+                            </div>
                         }
                     </div>
                 </div>
