@@ -7,11 +7,11 @@ function Sliderone() {
   const { language } = useLanguage();
   let settings = {
     dots: true,
-    infinite: true,
-    slidesToShow: 3,
+    infinite: false,
+    slidesToShow: 2.5, 
     slidesToScroll: 1,
     autoplay: true,
-    speed: 2000,
+    speed: 3000,
     autoplaySpeed: 1300,
     cssEase: "linear",
   };
@@ -29,9 +29,9 @@ function Sliderone() {
         <div className="slider">
           <h1>{translations[language].title}</h1>
           <Slider className="you" {...settings}>
-            <div className="slider--video">
+            <div className="you--video">
               <iframe
-                width="450"
+                width="520"
                 height="340"
                 src="https://www.youtube.com/embed/M_pclb-58ZY"
                 title="YouTube video player"
@@ -40,9 +40,9 @@ function Sliderone() {
                 allowfullscreen
               ></iframe>
             </div>
-            <div className="slider--video">
+            <div className="you--video">
               <iframe
-                width="450"
+                width="520"
                 height="340"
                 src="https://www.youtube.com/embed/NErrGZ64OdE"
                 title="YouTube video player"
@@ -51,9 +51,9 @@ function Sliderone() {
                 allowfullscreen
               ></iframe>
             </div>
-            <div className="slider--video">
+            <div className="you--video">
               <iframe
-                width="450"
+                width="520"
                 height="340"
                 src="https://www.youtube.com/embed/9EmO9_MK1gQ"
                 title="YouTube video player"
@@ -62,9 +62,9 @@ function Sliderone() {
                 allowfullscreen
               ></iframe>
             </div>
-            <div className="slider--video">
+            <div className="you--video">
               <iframe
-                width="450"
+                width="520"
                 height="340"
                 src="https://www.youtube.com/embed/xhF66hfRbmw"
                 title="YouTube video player"
@@ -73,9 +73,9 @@ function Sliderone() {
                 allowfullscreen
               ></iframe>
             </div>
-            <div className="slider--video">
+            <div className="you--video">
               <iframe
-                width="450"
+                width="520"
                 height="340"
                 src="https://www.youtube.com/embed/IK6e1SFCdow"
                 title="YouTube video player"

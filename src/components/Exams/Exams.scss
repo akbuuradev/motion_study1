@@ -70,11 +70,11 @@
           display: flex;
           align-items: center;
           // justify-content: center;
-          width: 599px;
+          width: 609px;
           height: 180px;
           border-radius: 8px;
           border: 1px solid #bbb;
-          margin: 30px 0 30px 0;
+          margin: 33px 0 35px 0;
           &__text {
             &--mini {
               width: 60px;
@@ -96,12 +96,14 @@
               font-size: 18px;
               font-weight: 500;
               margin: 11px 0;
+              width: 270px;
             }
             h2 {
               color: #010d39;
               font-family: Montserrat, sans-serif;
               font-size: 12px;
               font-weight: 400;
+              width: 310px;
             }
             &--mini1 {
               width: 100px;
@@ -143,18 +145,264 @@
 @media (max-width: 1200px) {
 }
 @media (max-width: 1024px) {
+  #exams {
+    .exams {
+      p {
+        margin-left: 15%;
+      }
+      &--big {
+        &__one {
+          width: 400px;
+          &--text {
+            h5 {
+              width: 360px;
+            }
+          }
+        }
+        &__two {
+          &--block {
+            width: 500px;
+            &__text {
+              h2 {
+                width: 250px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media (max-width: 992px) {
+  #exams {
+    .exams {
+      p {
+        margin-left: 10%;
+      }
+      &--big {
+        &__one {
+          width: 300px;
+          &--text {
+            h5 {
+              width: 260px;
+            }
+          }
+        }
+        &__two {
+          &--block {
+            width: 420px;
+            &__text {
+              h3 {
+                width: 180px;
+                margin: 0;
+              }
+              h2 {
+                width: 180px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media (max-width: 768px) {
+  #exams {
+    .exams {
+      p {
+        margin-left: 3%;
+      }
+      &--big {
+        display: block;
+        &__one {
+          margin-left: 15%;
+          width: 506px;
+          &--text {
+            h5 {
+              width: 400px;
+            }
+          }
+        }
+        &__two {
+          margin-left: 7%;
+          &--block {
+            width: 609px;
+            &__text {
+              h3 {
+                width: 270px;
+                margin: 10px 0;
+              }
+              h2 {
+                width: 310px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media (max-width: 576px) {
+  #exams {
+    .exams {
+      p {
+        margin-left: -2%;
+        width: 550px;
+      }
+      &--big {
+        display: block;
+        &__one {
+          margin-left: 0;
+          width: 506px;
+        }
+        &__two {
+          margin-left: 0;
+          &--block {
+            width: 519px;
+            &__text {
+              h2 {
+                width: 270px;
+              }
+              h3 {
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media (max-width: 451px) {
+  #exams {
+    padding: 0;
+    .exams {
+      p {
+        margin-left: 0;
+        width: 400px;
+      }
+      &--big {
+        display: block;
+        &__one {
+          margin-left: 0;
+          width: 406px;
+          h5 {
+            width: 350px;
+          }
+        }
+        &__two {
+          margin-left: 0;
+          &--block {
+            img {
+              width: 309px;
+              height: 179px;
+              margin-left: 10%;
+              // padding: 15% 30%;
+            }
+            display: block;
+            width: 409px;
+            height: 330px;
+            &__text {
+              margin-left: 5%;
+              h2 {
+                width: 380px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media (max-width: 400px) {
+  #exams {
+    .exams {
+      p {
+        width: 350px;
+      }
+      &--big {
+        &__one {
+          width: 356px;
+          h5 {
+            width: 350px;
+          }
+        }
+        &__two {
+          &--block {
+            width: 356px;
+            &__text {
+              h2 {
+                width: 320px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media (max-width: 376px) {
+  #exams {
+    .exams {
+      p {
+        width: 320px;
+      }
+      &--big {
+        &__one {
+          width: 340px;
+          &--text {
+            margin-left: 10px;
+            h5 {
+              width: 300px;
+            }
+          }
+        }
+        &__two {
+          &--block {
+            width: 340px;
+            &__text {
+              h2 {
+                width: 320px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media (max-width: 320px) {
+  #exams {
+    .exams {
+      p {
+        width: 280px;
+      }
+      &--big {
+        &__one {
+          width: 280px;
+          height: 530px;
+          &--text {
+            margin-left: 10px;
+            h5 {
+              width: 250px;
+            }
+          }
+        }
+        &__two {
+          &--block {
+            img {
+              margin: 0;
+            }
+            width: 280px;
+            height: 350px;
+            &__text {
+              h2 {
+                width: 250px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

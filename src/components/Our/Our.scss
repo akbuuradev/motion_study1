@@ -12,6 +12,7 @@
     &--block {
       display: flex;
       // justify-content: center;
+      justify-content: space-between;
       flex-wrap: wrap;
       &__mini {
         width: 375px;
@@ -39,30 +40,110 @@
           text-align: center;
         }
       }
-      &__mini1 {
-        width: 375px;
-        height: 489px;
-        border-radius: 8px;
-        box-shadow: 5px 8px 24px 0 rgba(0, 0, 0, 0.1);
-        margin: 0 55px 50px 55px;
-        img {
-          width: 375px;
+      // &__mini1 {
+      //   width: 375px;
+      //   height: 489px;
+      //   border-radius: 8px;
+      //   box-shadow: 5px 8px 24px 0 rgba(0, 0, 0, 0.1);
+      //   margin: 0 55px 50px 55px;
+      //   img {
+      //     width: 375px;
+      //   }
+      //   h2 {
+      //     color: #000;
+      //     font-size: 20px;
+      //     font-weight: 500;
+      //     text-transform: capitalize;
+      //     text-align: center;
+      //     margin: 20px 0 10px 0;
+      //   }
+      //   p {
+      //     color: rgba(123, 106, 255, 0.5);
+      //     font-family: Montserrat, sans-serif;
+      //     font-size: 16px;
+      //     font-weight: 500;
+      //     text-transform: capitalize;
+      //     text-align: center;
+      //   }
+      // }
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+  #our {
+    .our {
+      h1 {
+        margin: 50px 0;
+      }
+
+      &--block {
+        &__mini {
+          margin-left: 22%;
         }
-        h2 {
-          color: #000;
-          font-size: 20px;
-          font-weight: 500;
-          text-transform: capitalize;
-          text-align: center;
-          margin: 20px 0 10px 0;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  #our {
+    .our {
+      &--block {
+        &__mini {
+          margin-left: 14%;
         }
-        p {
-          color: rgba(123, 106, 255, 0.5);
-          font-family: Montserrat, sans-serif;
-          font-size: 16px;
-          font-weight: 500;
-          text-transform: capitalize;
-          text-align: center;
+      }
+    }
+  }
+}
+@media (max-width: 451px) {
+  #our {
+    .our {
+      &--block {
+        &__mini {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+}
+@media (max-width: 376px) {
+  #our {
+    .our {
+      h1 {
+        font-size: 35px;
+      }
+      &--block {
+        &__mini {
+          margin-left: 0;
+          height: 440px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  #our {
+    .our {
+      h1 {
+        font-size: 35px;
+      }
+      &--block {
+        &__mini {
+          margin-left: 0;
+          height: 400px;
         }
       }
     }

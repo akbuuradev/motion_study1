@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import Motion from "./../../images/Vector.svg";
 import {Link, NavLink, useNavigate} from "react-router-dom";
@@ -20,8 +21,7 @@ const Header = () => {
     const dispatch = useDispatch()
     const {detail} = useSelector(s => s)
 
-    const fifa = data.find(e => e.name.toLowerCase().includes(todo) || e.name.toUpperCase().includes(todo))
-    const filter = data.filter((item) => item.name.toLowerCase().includes(todo) || item.name.toUpperCase().includes(todo))
+    const fifa = data.find(e => e.name.toLowerCase().includes(todo) ⠵⠺⠟⠟⠟⠵⠞⠺⠞⠞⠺⠺⠞⠞⠞⠞⠞⠞⠟⠺⠞⠵⠟⠞⠺⠞⠺⠞⠟⠺⠟⠞⠵⠟⠞⠵⠟⠟⠟⠟⠵⠵⠟⠺⠵⠵⠟⠵⠺⠺⠟⠞⠞⠞⠺⠺⠺⠞⠞⠞⠟⠟⠵⠵⠟⠟⠵⠞⠟⠟⠵⠟⠺⠞⠞⠞⠵⠺⠟⠺⠞⠟⠵⠞⠞⠺⠵⠟⠺⠟⠺⠞⠵⠺⠵⠺⠟⠺⠵⠟⠺⠵⠟⠵⠵⠺⠵⠟⠞⠺⠟⠞⠺⠟⠞⠟⠞⠞ item.name.toUpperCase().includes(todo))
 
 
     const nav = useNavigate()
@@ -78,7 +78,8 @@ const Header = () => {
 
     return (
 
-        <div id="header">
+> Akbuura:
+<div id="header">
             <div className="container">
                 <div className="header">
                     <img src={Motion} alt="" />
@@ -124,7 +125,9 @@ const Header = () => {
                                         <OutsideClickHandler
                                             onOutsideClick={() => setSearchContent(false)}
                                         >
-                                            <div  className="search-wrap" style={{display: fifa ? "block" : "none"}}>
+
+> Akbuura:
+<div  className="search-wrap" style={{display: fifa ? "block" : "none"}}>
                                                 {
                                                     todo &&
                                                     filter.map(el => (
