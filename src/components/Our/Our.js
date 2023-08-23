@@ -54,7 +54,7 @@ const Our = () => {
               <h2>{translations[language].name1}</h2>
               <p>{translations[language].title1}</p>
             </div>
-            <div className="our--block__mini1">
+            <div className="our--block__mini">
               <img src={Rec1} alt="img" />
               <h2>{translations[language].name2}</h2>
               <p>{translations[language].title2}</p>
@@ -69,7 +69,7 @@ const Our = () => {
               <h2>{translations[language].name4} </h2>
               <p>{translations[language].title4}</p>
             </div>
-            <div className="our--block__mini1">
+            <div className="our--block__mini">
               <img src={Rec4} alt="img" />
               <h2>{translations[language].name5}</h2>
               <p>{translations[language].title5}</p>
