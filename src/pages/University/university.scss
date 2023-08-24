@@ -61,3 +61,139 @@
 
   }
 }
+
+@media (max-width: 1440px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1200px) {
+  #university .university--left__car {
+    width: 509px;
+  }
+  #university .university--left h2 {
+    padding: 12px 0 19px 13px;
+  }
+  #university .university--right {
+    width: 478px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  #university .university--left h2 {
+    padding: 12px 0 19px 59px;
+  }
+  #university .university--left h2 {
+    padding: 12px 0 19px 59px;
+    width: 485px;
+    margin: 0 0 20px 35px;
+  }
+  #university .university--left__car {
+    width: 484px;
+    margin: 0 0 0 38px;
+  }
+  #university .university {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 992px) {
+  #university .university--left h2 {
+    padding: 7px 0 18px 130px;
+    margin: 38px 0 0 0;
+  }
+  #university .university--right {
+    width: 562px;
+  }
+  #university .university--left h2 {
+    padding: 12px 0 18px 25px;
+    width: 547px;
+  }
+  #university .university--left__car {
+    width: 549px;
+    margin: 0 0 0 0;
+  }
+}
+
+@media (max-width: 576px) {
+  #university .university--right {
+    width: 504px;
+  }
+  #university .university--left h2 {
+    padding: 12px 0 18px 10px;
+    width: 501px;
+    margin: 38px 0 0 5px;
+  }
+  #university .university--left__car {
+    width: 508px;
+    margin: 0 0 0 5px;
+  }
+}
+
+@media (max-width: 451px) {
+  #university .university--right {
+    width: 399px;
+  }
+  #university .university--left h2 {
+    padding: 12px 0 18px 10px;
+    width: 391px;
+    margin: 31px 0 0 0;
+  }
+  #university .university--left__car {
+    width: 390px;
+    margin: 0 0 0 5px;
+  }
+  #university h1 {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 376px) {
+  #university .university--right {
+    width: 329px;
+  }
+  #university .university--left__car {
+    width: 326px;
+    margin: 0 0 0 0;
+    height: 332px;
+  }
+  #university .university--left h2 {
+    padding: 12px 0 18px 10px;
+    width: 329px;
+    margin: 31px 0 0 0;
+  }
+}
+
+@media (max-width: 320px) {
+  #university .university--right {
+    width: 275px;
+  }
+  #university .university--left h2 {
+    padding: 6px 0 18px 19px;
+    width: 266px;
+    margin: 31px 0 0 0;
+  }
+  #university .university--left__car {
+    width: 264px;
+    margin: 0 0 0 0;
+    height: 332px;
+  }
+  #university .university--left__car--shoe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #university .university--left__car--shoe__design {
+    margin: -15px 0;
+
+  }
+  #university .university--left h2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+}

@@ -2,11 +2,15 @@ import React from 'react';
 import Univer from "./../../images/university.svg"
 import './university.scss'
 import {data} from "../../Data/countData";
+import {useSelector} from "react-redux";
 
 const University = () => {
 
+    const {count, aboutCount} = useSelector(s => s)
 
-    const {img, location, date, name,  type, design, language, languages} = data[1].about[0].details
+    const {img, location, date, name,  type, design, language, languages} = data[count - 1].about[aboutCount - 1].details
+
+    console.log(name)
 
     return (
         <div id="university">

@@ -2,10 +2,13 @@ import React, {useState} from 'react';
 import cypriotUniversitiesData from "../../Data/Cyprus";
 import {IoLocationOutline} from "react-icons/io5";
 import './paphos.scss'
+import {data} from "../../Data/countData";
+import {useSelector} from "react-redux";
 
 const Paphos = () => {
 
     const [line, setLine] = useState(false)
+    const {count} = useSelector(s => s)
 
     return (
         <div id="paphos">
@@ -45,7 +48,7 @@ const Paphos = () => {
                         </div>
                     </div>
                     {
-                        cypriotUniversitiesData.slice(line ? 0 : 5, line ? 5 : 10).map((el) => (
+                        data[count - 1].about.slice(line ? 0 : 5, line ? 5 : 10).map((el) => (
                             <div className="paphos--lima">
                                 <div className="paphos--lima__nico">
                                     <img src={el.image} alt=""/>

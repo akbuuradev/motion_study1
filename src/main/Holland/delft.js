@@ -2,10 +2,13 @@ import React, {useState} from 'react';
 import dutchUniversitiesData from "../../Data/Holland";
 import {IoLocationOutline} from "react-icons/io5";
 import './delft.scss'
+import {data} from "../../Data/countData";
+import {useSelector} from "react-redux";
 
 const Delft = () => {
 
     const [line, setLine] = useState(false)
+    const {count} = useSelector(s => s)
 
     return (
         <div id="delft">
@@ -45,7 +48,7 @@ const Delft = () => {
                         </div>
                     </div>
                     {
-                        dutchUniversitiesData.slice(line ? 0 : 5., line ? 5 : 10).map((el) => (
+                        data[count - 1]. about.slice(line ? 0 : 5., line ? 5 : 10).map((el) => (
                             <div className="delft--leiden">
                                 <div className="delft--leiden__dutch">
                                     <img src={el.image} alt=""/>

@@ -204,7 +204,7 @@ const Contacts = () => {
                     <h3>+996 500 34 84 39</h3>
                   </div>
                   <div className="application--left__info--main__block--email">
-                    <h4><TfiEmail className="application--left__info--main__block--email__icons" /></h4>
+                    <h4 className="application--left__info--main__block--email__icons"><TfiEmail  /></h4>
                     <h3>motionweb312@gmail.com</h3>
                   </div>
                   <div className="application--left__info--main__block--plane">
@@ -213,7 +213,7 @@ const Contacts = () => {
                     <BiLogoInstagramAlt />
                   </div>
                   <div className="application--left__info--main__block--card">
-                    <iframe
+                    <iframe className="figa"
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.670015518184!2d74.58255517583908!3d42.87980860210774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec9ba3daadfbb%3A0x4e7a5fa037f5fd93!2sMotion%20Web%20IT%20academy!5e0!3m2!1sru!2skg!4v1691908143384!5m2!1sru!2skg"
                       width="400"
                       height="250"

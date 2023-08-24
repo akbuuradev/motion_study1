@@ -127,6 +127,7 @@
           display: flex;
           justify-content: space-between;
           margin: 30px 0 20px 0;
+
           h2 {
             width: 140px;
             color: var(--text-1212, #010D39);
@@ -134,9 +135,11 @@
             font-weight: 400;
 
           }
+
           &--vip {
             display: flex;
             flex-direction: column;
+
             span {
               flex-shrink: 0;
               color: #212121;
@@ -144,6 +147,7 @@
               font-weight: 500;
               margin: 0 0 30px 112px;
             }
+
             p {
               width: 338px;
               flex-shrink: 0;
@@ -160,6 +164,7 @@
           display: flex;
           justify-content: space-between;
           margin: 0 0 40px 0;
+
           h2 {
             margin-top: 13px;
             width: 124px;
@@ -168,26 +173,28 @@
             font-weight: 400;
           }
 
-         &__some {
-           display: flex;
-           flex-direction: column;
-           p {
-             margin: 10px 0 0 50px;
-             width: 335px;
-             color: #212121;
-             font-size: 22px;
-             font-weight: 400;
-             border-bottom: 1.5px solid gray;
-             padding-bottom: 20px;
-           }
-           span {
-             width: 335px;
-             margin: 30px 0 0 50px;
-             color: #212121;
-             font-size: 22px;
-             font-weight: 600;
-           }
-         }
+          &__some {
+            display: flex;
+            flex-direction: column;
+
+            p {
+              margin: 10px 0 0 50px;
+              width: 335px;
+              color: #212121;
+              font-size: 22px;
+              font-weight: 400;
+              border-bottom: 1.5px solid gray;
+              padding-bottom: 20px;
+            }
+
+            span {
+              width: 335px;
+              margin: 30px 0 0 50px;
+              color: #212121;
+              font-size: 22px;
+              font-weight: 600;
+            }
+          }
 
 
         }
@@ -195,6 +202,7 @@
         &--entry {
           display: flex;
           justify-content: space-between;
+
           h2 {
             width: 140px;
             color: var(--text-1212, #010D39);
@@ -221,6 +229,7 @@
           align-items: center;
           flex-direction: column;
           justify-content: center;
+
           h2 {
             margin: 30px 0 38px 0;
             color: #FDFDFD;
@@ -436,3 +445,658 @@
     }
   }
 }
+
+@media (max-width: 1440px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1200px) {
+  #description .description--time__right--now__share h1 {
+    margin-left: 70px;
+  }
+  #description .description--time__right--now__share h2 {
+    margin-left: 70px;
+  }
+  #description .description--time__right--awards p {
+    width: 350px;
+    margin-right: 50px;
+  }
+  #description .description--time__right--line {
+    border-bottom: 1.5px solid black;
+    width: 504px;
+  }
+  #description .description--time__right--tuition h2 {
+    margin-right: 63px;
+  }
+  #description .description--time__right--one h2 {
+    margin-right: 59px;
+  }
+  #description .description--time__right--base--vip p {
+    margin: 0 0 0 4px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #tabs .tabs--title {
+    width: 919px;
+  }
+  #description .description--time__right--line {
+    border-bottom: 1.5px solid black;
+    width: 461px;
+  }
+  #description .description--time__right--tuition h2 {
+    margin-right: 18px;
+  }
+  #description .description--time__right--one h2 {
+    margin-right: 17px;
+  }
+  #description .description--time__left--for__you p {
+    width: 278px;
+  }
+  .description--time__left--for h2 {
+    width: 346px;
+  }
+  #description .description--time__left--for__apple p {
+    width: 273px;
+  }
+  #description .description--time__left--for__commence p {
+    width: 181px;
+  }
+  #description .description--time__left--for h3 {
+    width: 338px;
+  }
+  #description .description--time__left--for__has p {
+    width: 306px;
+  }
+  #description .description--time__left--for__studies p {
+    margin-right: 40px;
+  }
+  #description .description--time__left--for__line {
+    width: 321px;
+  }
+  #description .description--time__left--for {
+    width: 402px;
+    height: 1281px;
+    padding-top: 30px;
+  }
+
+}
+
+@media (max-width: 992px) {
+  #description .description--time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #tabs .tabs--title {
+    width: 764px;
+  }
+
+  #description .description--time__right--now__share h1 {
+    margin-left: 155px;
+  }
+  #description .description--time__right--now__share h2 {
+    margin-left: 155px;
+  }
+  #description .description--time__right--awards p {
+    width: 350px;
+    margin-right: -3px;
+  }
+  #description .description--time__right--line {
+    border-bottom: 1.5px solid black;
+    width: 578px;
+  }
+  #description .description--time__right--tuition h2 {
+    margin-right: 142px;
+  }
+  #description .description--time__right--one h2 {
+    margin-right: 144px;
+  }
+  #description .description--time__left--for {
+    padding-top: 10px;
+    width: 498px;
+    height: 1150px;
+  }
+  #description .description--time__left--for__you p {
+    width: 313px;
+  }
+  #description .description--time__left--for__apple p {
+    width: 317px;
+  }
+  #description .description--time__left--for__commence p {
+    width: 228px;
+  }
+  #description .description--time__left--for h3 {
+    width: 380px;
+  }
+  #description .description--time__left--for__has p {
+    width: 350px;
+  }
+  #description .description--time__left--for__studies p {
+    margin-right: 82px;
+  }
+  #description .description--time__left--for__line {
+    width: 355px;
+  }
+}
+
+@media (max-width: 768px) {
+  #tabs .tabs--title {
+    width: 682px;
+  }
+}
+
+@media (max-width: 576px) {
+  #tabs .tabs--title {
+    width: 521px;
+  }
+  #tabs .tabs--title__photo--item {
+    color: var(--text-212121, #212121);
+    font-size: 20px;
+    font-weight: 500;
+    margin: 16px 0;
+    position: relative;
+    padding: 0 49px 16px 19px;
+  }
+  #description .description--time__right--now__share h2 {
+    margin-left: 60px;
+  }
+  #description .description--time__right--now__share h1 {
+    margin-left: 60px;
+  }
+  #description .description--time__right--now img {
+    margin-left: 32px;
+  }
+  #description .description--time__right--awards p {
+    width: 350px;
+    margin-right: 12px;
+  }
+  #description .description--time__right--awards h2 {
+    margin-left: 32px;
+  }
+  #description .description--time__right h3 {
+    padding: 60px 0 30px 32px;
+    display: flex;
+    flex-direction: column;
+  }
+  #description .description--time__right--line {
+    width: 495px;
+    margin-left: 32px;
+  }
+  #description .description--time__right--tuition h2 {
+    margin: 0 62px 0 32px;
+  }
+  #description .description--time__right--one h2 {
+    margin: 0 67px 0 32px;
+  }
+  #description .description--time__right--base h2 {
+    margin: 0 44px 0 32px;
+  }
+  #description .description--time__right--high h2 {
+    margin: 13px 0 0 32px;
+  }
+  #description .description--time__right--high__some p {
+    margin: 10px 0 0 4px;
+    width: 300px;
+  }
+  #description .description--time__right--high__some span {
+    width: 335px;
+    margin: 30px 0 0 3px;
+  }
+  #description .description--time__right--entry p {
+    width: 291px;
+  }
+  #description .description--time__right--entry h2 {
+    width: 140px;
+    color: var(--text-1212, #010D39);
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 32px;
+  }
+  #description .description--time__right--entry p {
+    width: 291px;
+    margin-right: 46px;
+  }
+}
+
+@media (max-width: 451px) {
+  #tabs .tabs--title {
+    width: 400px;
+  }
+  #description .description--time__right--now__share h1 {
+    font-size: 30px;
+    width: 232px;
+  }
+  #description .description--time__right--now__share h2 {
+    width: 212px;
+  }
+  #description .description--time__right--now img {
+    margin-left: 45px;
+  }
+  #description .description--time__right h3 {
+    padding: 60px 0 30px 45px;
+  }
+  #description .description--time__right--awards p {
+    width: 223px;
+    margin-right: 45px;
+  }
+  #description .description--time__right--awards h2 {
+    margin-left: 45px;
+  }
+  #description .description--time__right--line {
+    width: 386px;
+    margin-left: 50px;
+  }
+  #description .description--time__right--tuition h2 {
+    margin: 0 62px 0 45px;
+  }
+  #description .description--time__right--tuition p {
+    padding: 0 0 20px 0;
+    width: 230px;
+  }
+  #description .description--time__right--tuition h2 {
+    margin: 0 26px 0 45px;
+  }
+  #description .description--time__right--one p {
+    width: 232px;
+  }
+  #description .description--time__right--one h2 {
+    margin: 0 24px 0 45px;
+  }
+  #description .description--time__right--base--vip p {
+    width: 207px;
+    margin: 0 50px 0 -22px;
+  }
+  #description .description--time__right--base h2 {
+    margin: 0 42px 0 45px;
+  }
+  #description .description--time__right--high__some p {
+    margin: 10px 0 0 4px;
+    width: 204px;
+  }
+  #description .description--time__right--high h2 {
+    margin: 13px 0 0 45px;
+  }
+  #description .description--time__right--high__some span {
+    width: 222px;
+    margin: 30px 38px 0 3px;
+  }
+  #description .description--time__right--entry p {
+    width: 219px;
+    margin-right: 46px;
+  }
+  #description .description--time__right--entry h2 {
+    margin-left: 45px;
+  }
+  #description .description--time__left {
+    padding-top: 185px;
+  }
+  #description .description--time__left--for {
+    padding-top: 10px;
+    width: 391px;
+    height: 1250px;
+  }
+  #description .description--time__left--for h2 {
+    width: 334px;
+  }
+  #description .description--time__left--for__you p {
+    width: 263px;
+  }
+  #description .description--time__left--for__apple p {
+    width: 252px;
+  }
+  #description .description--time__left--for__commence p {
+    width: 159px;
+  }
+  #description .description--time__left--for h3 {
+    width: 318px;
+  }
+  #description .description--time__left--for__has p {
+    width: 298px;
+  }
+  #description .description--time__left--for__studies p {
+    margin-right: 24px;
+  }
+  #description .description--time__left--for__line {
+    width: 305px;
+  }
+}
+
+@media (max-width: 400px) {
+  #description .description--time__left--for__share--images {
+    display: flex;
+    margin: 0 -5px;
+  }
+  #description .description--time__left--for {
+    padding-top: 10px;
+    width: 344px;
+    height: 1250px;
+  }
+  #tabs .tabs--title {
+    width: 357px;
+  }
+  #tabs .tabs--title__photo--item {
+    padding: 0 24px 16px 17px;
+  }
+  #description .description--time__right--now img {
+    margin-left: 50px;
+  }
+  #description .description--time__right h3 {
+    padding: 60px 0 30px 50px;
+  }
+  #description .description--time__right--awards h2 {
+    margin-left: 50px;
+  }
+  #description .description--time__right--awards p {
+    width: 223px;
+    margin-right: 75px;
+  }
+  #description .description--time__right--line {
+    width: 331px;
+    margin-left: 63px;
+  }
+  #description .description--time__right--tuition {
+    display: flex;
+    padding: 40px 0 60px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  #description .description--time__right--one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #description .description--time__right--one p {
+    width: 281px;
+  }
+  #description .description--time__right--one h2 {
+    margin: 0 136px 20px 45px;
+    width: 176px;
+  }
+  #description .description--time__right--base {
+    flex-direction: column;
+    align-items: center;
+  }
+  #description .description--time__right--base h2 {
+    width: 214px;
+    padding-bottom: 20px;
+    margin:  0 50px 0  0;
+  }
+  #description .description--time__right--base--vip p {
+    width: 240px;
+    margin: 0 0 0 -22px;
+  }
+  #description .description--time__right--high h2 {
+    margin: 13px 0 0 50px;
+  }
+  #description .description--time__right--entry h2 {
+    margin-left: 50px;
+  }
+  #description .description--time__right--now__share h1 {
+    font-size: 30px;
+    width: 144px;
+  }
+  #description .description--time__right--now__share h1 {
+    margin-left: 32px;
+  }
+  #description .description--time__right--now__share h2 {
+    margin-left: 32px;
+  }
+  #description .description--time__right--high {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 40px 0;
+    align-items: center;
+    flex-direction: column;
+  }
+  #description .description--time__right--high__some span {
+    width: 284px;
+    margin: 30px 38px 0 3px;
+  }
+  #description .description--time__right--high__some p {
+    margin: 10px 0 0 4px;
+    width: 281px;
+  }
+  #description .description--time__right--high h2 {
+    margin: 13px 0 0 0;
+  }
+  #description .description--time__right--entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #description .description--time__right--entry p {
+    width: 312px;
+    margin-right: 46px;
+  }
+  #description .description--time__right--entry h2 {
+    width: 207px;
+  }
+  #description .description--time__right--entry h2 {
+    margin: 20px 0 27px 0;
+  }
+  #description .description--time__right--awards {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  #description .description--time__right--awards p {
+    width: 307px;
+    margin-right: 0;
+  }
+  #description .description--time__right--awards h2 {
+    margin: 0 0 30px 0;
+  }
+  #description .description--time__right--line {
+    width: 331px;
+    margin-left: 12px;
+  }
+  #description .description--time__right--now {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #description .description--time__right--now__share h1 {
+    font-size: 30px;
+    width: 291px;
+    margin-left: 32px;
+  }
+  #description .description--time__right--now__share h2 {
+    width: 255px;
+  }
+  #description .description--time__left {
+    padding-top: -8px;
+  }
+  }
+
+@media (max-width: 375px) {
+  #description .description--time__right--now {
+    display: flex;
+    flex-direction: column;
+
+  }
+  #description .description--time__right--entry p {
+    width: 312px;
+    margin-right: 0;
+  }
+  #description .description--time__right {
+    display: flex;
+    align-items: center;
+  }
+  #description .description--time__right--now img {
+    margin-left: 0;
+    width: 220px;
+  }
+  #description .description--time__right--now__share h1 {
+    font-size: 30px;
+    width: 291px;
+    margin: 32px 0 20px 0;
+  }
+  #description .description--time__right--now__share h2 {
+    width: 262px;
+    margin-left: 0;
+  }
+  #description .description--time__right h3 {
+    padding: 60px 0 30px 0;
+  }
+  #description .description--time__right--awards h2 {
+    margin-left: 98px;
+  }
+  #description .description--time__right--line {
+    width: 309px;
+    margin-left: 5px;
+  }
+  #description .description--time__right--tuition h2 {
+    margin: 0 9px 0 -28px;
+  }
+  #description .description--time__right--one h2 {
+    margin: 0 12px 0 -18px;
+  }
+  #description .description--time__right--base--vip p {
+    width: 161px;
+    margin: 0 77px 0 -31px;
+  }
+  #description .description--time__right--high__some span {
+    width: 190px;
+    margin: 30px 38px 0 3px;
+  }
+  #description .description--time__right--high__some p {
+    margin: 10px 0 0 4px;
+    width: 178px;
+  }
+  #description .description--time__right--entry p {
+    width: 184px;
+    margin-right: 46px;
+  }
+  #description .description--time__left--for {
+    padding-top: 10px;
+    width: 309px;
+    height: 1250px;
+  }
+  #tabs .tabs--title {
+    width: 333px;
+  }
+  #description .description--time__left--for h2 {
+    width: 262px;
+  }
+  #description .description--time__left--for__you p {
+    width: 195px;
+  }
+  #description .description--time__left--for__apple p {
+    width: 191px;
+  }
+  #description .description--time__left--for__commence p {
+    width: 113px;
+  }
+  #description .description--time__left--for h3 {
+    width: 268px;
+  }
+  #description .description--time__left--for__has p {
+    width: 240px;
+  }
+  #description .description--time__left--for__studies p {
+    margin-right: -15px;
+  }
+  #description .description--time__left--for__line {
+    width: 259px;
+  }
+  #description .description--time__left--for__share--images img {
+    margin: 0 5px 0 9px;
+  }
+  #description .description--time__left--for {
+    padding-top: 10px;
+    width: 309px;
+    height: 1374px;
+  }
+  #description .description--time__right--awards h2 {
+    margin-left: 0;
+  }
+  #description .description--time__right--base--vip p {
+    width: 238px;
+    margin: 0 77px 0 56px;
+  }
+  #description .description--time__right--high__some span {
+    width: 277px;
+    margin: 30px 38px 0 3px;
+  }
+  #description .description--time__right--high__some p {
+    margin: 10px 0 0 4px;
+    width: 277px;
+  }
+  #description .description--time__right--entry p {
+    width: 282px;
+    margin-right: 46px;
+  }
+  #description .description--time__left {
+    padding-top: 2px;
+  }
+  }
+
+@media (max-width: 320px) {
+  #tabs .tabs--title {
+    width: 277px;
+    height: 227px;
+  }
+  #tabs .tabs--title__photo {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  #description .description--time__right--now__share h1 {
+    font-size: 30px;
+    width: 279px;
+    margin: 32px 0 20px 0;
+  }
+  #description .description--time__right--awards p {
+    width: 307px;
+    margin-right: -53px;
+  }
+  #description .description--time__right--line {
+    width: 251px;
+    margin-left: -1px;
+  }
+  #description .description--time__right--one p {
+    width: 263px;
+  }
+  #description .description--time__right--high__some span {
+    width: 259px;
+    margin: 30px -27px 0 7px;
+  }
+  #description .description--time__right--entry p {
+    width: 260px;
+    margin-right: 0;
+  }
+  #description .description--time__left--for {
+    padding-top: 10px;
+    width: 273px;
+    height: 1374px;
+  }
+  #description .description--time__left--for h3 {
+    width: 243px;
+  }
+  #description .description--time__left--for__studies p {
+    margin-right: -46px;
+  }
+  #description .description--time__left--for__line {
+    width: 231px;
+  }
+  #description .description--time__left {
+    padding-top: 56px;
+  }
+  #description .description--time__right--awards p {
+    width: 235px;
+    margin-right: 9px;
+  }
+  #description .description--time__left--for__has p {
+    width: 196px;
+  }
+  #description .description--time__left--for__studies p {
+    margin-right: -11px;
+    width: 136px;
+  }
+  }

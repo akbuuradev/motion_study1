@@ -1,11 +1,22 @@
 import React, {useState} from 'react';
-import austrianUniversitiesData from "../../Data/Austria";
 import "./vienna.scss"
 import {IoLocationOutline} from "react-icons/io5";
+import {data} from "../../Data/countData";
+import {useDispatch, useSelector} from "react-redux";
+import {useNavigate} from "react-router-dom";
 
 const Vienna = () => {
 
+    const {count, aboutCount} = useSelector(s => s)
     const [line, setLine] = useState(false)
+
+    console.log(data[0].about)
+
+
+
+    const dispatch = useDispatch()
+
+    const nav = useNavigate()
 
     return (
         <div id="vienna">
@@ -45,22 +56,27 @@ const Vienna = () => {
                         </div>
                     </div>
                     {
-                        austrianUniversitiesData.slice(line ? 0 : 5, line ? 5 : 10).map((el) => (
-                            <div className="vienna--linz">
+                        data[count - 1].about.slice(0,5).map((el) => (
+                            <div onClick={() => {
+                                dispatch({type: "ABOUT_COUNT", payload: el.id})
+                                nav("/detail")
+                            }} className="vienna--linz">
                                 <div className="vienna--linz__graz">
                                     <img src={el.image} alt={el.name}/>
-                                    <div className="vienna--linz__graz--name">
-                                        <h3>Name:</h3>
-                                        <h2>{el.name}</h2>
-                                    </div>
-                                    <div className="vienna--linz__graz--location">
-                                        <p>Location <IoLocationOutline style={{color: "#9D72D6"}}/></p>
-                                        <h2>{el.location}</h2>
-                                    </div>
-                                    <div className="vienna--linz__graz--age">
-                                        <p>Age:</p>
-                                        <h2>From {el.age}</h2>
-                                    </div>
+                                   <div className="title">
+                                       <div className="vienna--linz__graz--name">
+                                           <h3>Name:</h3>
+                                           <h2>{el.name}</h2>
+                                       </div>
+                                       <div className="vienna--linz__graz--location">
+                                           <p>Location <IoLocationOutline style={{color: "#9D72D6"}}/></p>
+                                           <h2>{el.location}</h2>
+                                       </div>
+                                       <div className="vienna--linz__graz--age">
+                                           <p>Age:</p>
+                                           <h2>From {el.age}</h2>
+                                       </div>
+                                   </div>
                                 </div>
                             </div>
                         ))
@@ -68,12 +84,10 @@ const Vienna = () => {
                     {
                         <div className="popular--pages">
                             {
-
                                 <div className="popular--pages__btn">
                                     <button className="next" style={{background: line ? "#959aa2" : "black"}} onClick={() => setLine(false)}></button>
                                     <button className="next" style={{background: line ? "black" : "#959aa2"}} onClick={() => setLine( true)}></button>
                                 </div>
-
                             }
                         </div>
                     }

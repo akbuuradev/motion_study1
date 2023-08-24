@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
-import latvianUniversitiesData from "../../Data/Latvia";
 import {IoLocationOutline} from "react-icons/io5";
 import './jelgava.scss'
+import {data} from "../../Data/countData";
+import {useSelector} from "react-redux";
 
 const Jelgava = () => {
 
     const [line, setLine] = useState(false)
+    const {count} =useSelector(s => s)
 
     return (
         <div id="jelgava">
@@ -45,7 +47,7 @@ const Jelgava = () => {
                         </div>
                     </div>
                     {
-                        latvianUniversitiesData.slice(line ? 0 : 5, line ? 5 : 10).map((el) => (
+                        data[count - 1].about.slice(line ? 0 : 5, line ? 5 : 10).map((el) => (
                             <div className="jelgava--riga">
                                 <div className="jelgava--riga__title">
                                     <img src={el.image} alt=""/>
