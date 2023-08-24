@@ -70,8 +70,14 @@
       background: #FDFDFD;
       box-shadow: 0 0 24px 0 rgba(138, 138, 138, 0.91);
       margin: 30px 0;
-
       border-radius: 10px;
+
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 80px;
+      }
 
       &__graz {
         display: flex;
@@ -118,6 +124,7 @@
         }
 
         &--age {
+          margin-left: 60px;
           p {
             color: #BBB;
             font-size: 20px;
@@ -132,5 +139,138 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 1440px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1200px) {
+  #vienna .vienna--linz {
+    width: 1014px;
+    padding: 17px 80px 18px 37px;
+  }
+  #vienna .vienna--linz .title {
+    gap: 23px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #vienna .vienna--linz {
+    width: 911px;
+    padding: 17px 5px 18px 17px;
+  }
+  #vienna .vienna--linz__graz--name h2 {
+    width: 275px;
+  }
+}
+
+@media (max-width: 992px) {
+  #vienna .vienna--linz {
+    width: 770px;
+    padding: 17px 5px 18px 17px;
+  }
+  #vienna .vienna--linz__graz--age {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #vienna .vienna--linz {
+    width: 690px;
+    padding: 17px -3px 18px 17px;
+  }
+  #vienna .vienna--linz__graz--name h2 {
+    width: 191px;
+    font-size: 23px;
+  }
+  }
+
+@media (max-width: 576px) {
+  #vienna .vienna--select {
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+  #vienna .vienna--linz {
+    width: 522px;
+    height: 300px;
+  }
+  #vienna .vienna--linz .title {
+    display: flex;
+    flex-direction: column;
+  }
+  #vienna .vienna--linz__graz {
+    gap: 54px;
+  }
+  #vienna .vienna--linz .title {
+    align-items: baseline;
+  }
+  #vienna .vienna--linz__graz--name h2 {
+    width: 221px;
+  }
+  #vienna .vienna--linz__graz img {
+    width: 219px;
+    height: 227px;
+  }
+}
+
+@media (max-width: 451px) {
+  #vienna .vienna--linz {
+    width: 401px;
+    height: 318px;
+  }
+  #vienna .vienna--linz__graz img {
+    width: 181px;
+    height: 227px;
+  }
+}
+
+@media (max-width: 400px) {
+  #vienna .vienna--linz__graz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #vienna .vienna--linz {
+    width: 354px;
+    height: 318px;
+  }
+  #vienna .vienna--linz__graz img {
+    width: 238px;
+    height: 145px;
+  }
+  #vienna .vienna--linz__graz--name h2 {
+    width: 316px;
+  }
+  #vienna .vienna--linz__graz {
+    gap: 16px;
+  }
+  #vienna .vienna--linz {
+    width: 354px;
+    height: 411px;
+  }
+}
+
+@media (max-width: 376px) {
+  #vienna .vienna--linz {
+    width: 336px;
+    height: 411px;
+  }
+  #vienna .vienna--linz__graz--name h2 {
+    width: 294px;
+  }
+}
+
+@media (max-width: 320px) {
+  #vienna .vienna--linz {
+    width: 290px;
+    height: 411px;
+  }
+  #vienna .vienna--linz__graz--name h2 {
+    width: 250px;
   }
 }

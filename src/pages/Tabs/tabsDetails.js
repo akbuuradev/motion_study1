@@ -3,11 +3,16 @@ import './tabsDetails.scss'
 import Cost from "../Cost/cost";
 import Photo from "../Photo/photo";
 import Description from "../Description/description";
+import {data} from "../../Data/countData";
+import {useSelector} from "react-redux";
 
 
 const TabsDetails = () => {
 
         const [tabs, setTabs] = useState(0)
+
+    const {count, aboutCount } = useSelector(s => s)
+
 
     return (
             <div id="tabs">
@@ -15,9 +20,11 @@ const TabsDetails = () => {
                     <div className="tabs">
                         <div className="tabs--title">
                             <div className="tabs--title__photo">
-                                       <span onClick={() => setTabs(0)} className="tabs--title__photo--item">Description</span>
-                                       <span onClick={() => setTabs(2)} className="tabs--title__photo--item">Cost</span>
-                                       <span onClick={() => setTabs(3)} className="tabs--title__photo--item">Photo</span>
+                                {
+                                    data[count - 1].about[aboutCount - 1].details.tabs.map(el => (
+                                        <span  onClick={() => setTabs(el.id - 1)} className="tabs--title__photo--item">{el.name}</span>
+                                    ))
+                                }
                             </div>
                         </div>
                     </div>
@@ -27,10 +34,10 @@ const TabsDetails = () => {
                         tabs === 0 && <Description/>
                     }
                     {
-                        tabs === 2 && <Cost/>
+                        tabs === 1 && <Cost/>
                     }
                     {
-                        tabs === 3 && <Photo/>
+                        tabs === 2 && <Photo/>
                     }
                 </div>
             </div>

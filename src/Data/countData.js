@@ -13,68 +13,6 @@ import img10 from './../images/cyprus.png'
 import img11 from './../images/china.png'
 import img12 from './../images/latvia.png'
 
-// export const countries = [
-//     {
-//         id: 1,
-//         name: "America",
-//         flagImage: "../images/america.png",
-//     },
-//     {
-//         id: 2,
-//         name: "Great Britain",
-//         flagImage: "../images/greatBritan.png",
-//     },
-//     {
-//         id: 3,
-//         name: "Austria",
-//         flagImage: "../images/ausrtra.png",
-//     },
-//     {
-//         id: 4,
-//         name: "Germany",
-//         flagImage: "../images/germany.png",
-//     },
-//     {
-//         id: 5,
-//         name: "Holland",
-//         flagImage: "../images/holland.png",
-//     },
-//     {
-//         id: 6,
-//         name: "Ireland",
-//         flagImage: "../images/Ireland.png",
-//     },
-//     {
-//         id: 7,
-//         name: "Spain",
-//         flagImage: "../images/Spain.png",
-//     },
-//     {
-//         id: 8,
-//         name: "Italy",
-//         flagImage: "../images/Italy.png",
-//     },
-//     {
-//         id: 9,
-//         name: "Canada",
-//         flagImage: "../images/canada.png",
-//     },
-//     {
-//         id: 10,
-//         name: "Cyprus",
-//         flagImage: "../images/cyprus.png",
-//     },
-//     {
-//         id: 11,
-//         name: "China",
-//         flagImage: "../images/china.png",
-//     },
-//     {
-//         id: 12,
-//         name: "Latvia",
-//         flagImage: "../images/latvia.png",
-//     },
-// ];
 
 
 export const data = [
@@ -92,8 +30,8 @@ export const data = [
                 age: "18",
                 details: {
                     id: 1,
-                    name: "Solbrige University",
-                    img: cost,
+                    name: "Cambridge University",
+                    img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/b4/df/fb/caption.jpg?w=600&h=800&s=1",
                     location: "Australia,Milan,Rim",
                     date: "1996",
                     type: "Bachelor Course Magistracy",
@@ -187,8 +125,8 @@ export const data = [
                 age: "18",
                 details: {
                     id: 2,
-                    name: "Solbrige University",
-                    img: cost,
+                    name: "Stanford University",
+                    img: "https://blockchainwelt.de/wp-content/uploads/2018/06/stanford-university.jpg",
                     location: "Australia,Milan,Rim",
                     date: "1996",
                     type: "Bachelor Course Magistracy",
@@ -282,7 +220,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 3,
-                    name: "Solbrige University",
+                    name: "Massachusetts Institute of Technology (MIT) University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -310,8 +248,8 @@ export const data = [
                                 normal: "4.5 years(240 ECTS)",
                                 bs: "B.Sc.",
                                 awards: "(Professional Bachelor’s degree in Business Management, qualification: Business Manager or E-Business Manager)",
-                                tuition: "€1,400 per semester" +
-                                    "US$1,502.87",
+                                tuition: "€1,400 per semester ",
+                                per: "US$1,502.87",
                                 application: "€120 one-time" +
                                     "US$128.83",
                                 registration: [
@@ -377,7 +315,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 4,
-                    name: "Solbrige University",
+                    name: "California Institute of Technology (Caltech) University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -472,7 +410,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 5,
-                    name: "Solbrige University",
+                    name: "Columbia University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -567,7 +505,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 6,
-                    name: "Solbrige University",
+                    name: "Yale University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -662,7 +600,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 7,
-                    name: "Solbrige University",
+                    name: "Princeton University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -852,7 +790,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 9,
-                    name: "Solbrige University",
+                    name: "University of California, Berkeley",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -947,7 +885,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 10,
-                    name: "Solbrige University",
+                    name: "University of Pennsylvania",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -1050,7 +988,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 1,
-                    name: "Solbrige University",
+                    name: "University of Oxford",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -1146,7 +1084,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 2,
-                    name: "Solbrige University",
+                    name: "University of Cambridge",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -1241,7 +1179,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 3,
-                    name: "Solbrige University",
+                    name: "Imperial College London University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -1336,7 +1274,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 4,
-                    name: "Solbrige University",
+                    name: "London School of Economics and Political Science (LSE) University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -1431,7 +1369,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 5,
-                    name: "Solbrige University",
+                    name: "University of Edinburgh",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -1526,7 +1464,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 6,
-                    name: "Solbrige University",
+                    name: "University of Manchester",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -1621,7 +1559,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 7,
-                    name: "Solbrige University",
+                    name: "University of Bristol",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -1716,7 +1654,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 8,
-                    name: "Solbrige University",
+                    name: "University of Warwick",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -1811,7 +1749,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 9,
-                    name: "Solbrige University",
+                    name: "University of Glasgow",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -1906,7 +1844,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 10,
-                    name: "Solbrige University",
+                    name: "University of Southampton",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -2009,7 +1947,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 1,
-                    name: "Solbrige University",
+                    name: "University of Vienna",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -2104,7 +2042,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 2,
-                    name: "Solbrige University",
+                    name: "Technical University of Vienna",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -2199,7 +2137,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 3,
-                    name: "Solbrige University",
+                    name: "University of Graz",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -2294,7 +2232,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 4,
-                    name: "Solbrige University",
+                    name: "University of Innsbruck",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -2389,7 +2327,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 5,
-                    name: "Solbrige University",
+                    name: "Vienna University of Technology",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -2484,7 +2422,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 6,
-                    name: "Solbrige University",
+                    name: "University of Salzburg",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -2579,7 +2517,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 7,
-                    name: "Solbrige University",
+                    name: "Medical University of Vienna",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -2674,7 +2612,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 8,
-                    name: "Solbrige University",
+                    name: "Johannes Kepler University Linz",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -2769,7 +2707,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 9,
-                    name: "Solbrige University",
+                    name: "University of Klagenfurt",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -2864,7 +2802,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 10,
-                    name: "Solbrige University",
+                    name: "University of Music and Performing Arts Graz",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -2967,7 +2905,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 1,
-                    name: "Solbrige University",
+                    name: "Technical University of Munich",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -3062,7 +3000,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 2,
-                    name: "Solbrige University",
+                    name: "University of Heidelberg",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -3157,7 +3095,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 3,
-                    name: "Solbrige University",
+                    name: "Humboldt University of Berlin",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -3252,7 +3190,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 4,
-                    name: "Solbrige University",
+                    name: "University of Göttingen",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -3347,7 +3285,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 5,
-                    name: "Solbrige University",
+                    name: "Ludwig Maximilian University of Munich",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -3442,7 +3380,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 6,
-                    name: "Solbrige University",
+                    name: "RWTH Aachen University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -3537,7 +3475,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 7,
-                    name: "Solbrige University",
+                    name: "University of Freiburg",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -3632,7 +3570,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 8,
-                    name: "Solbrige University",
+                    name: "University of Hamburg",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -3727,7 +3665,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 9,
-                    name: "Solbrige University",
+                    name: "University of Leipzig",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -3822,7 +3760,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 10,
-                    name: "Solbrige University",
+                    name: "University of Stuttgart",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -3925,7 +3863,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 1,
-                    name: "Solbrige University",
+                    name: "University of Amsterdam",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -4020,7 +3958,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 2,
-                    name: "Solbrige University",
+                    name: "Delft University of Technology",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -4115,7 +4053,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 3,
-                    name: "Solbrige University",
+                    name: "Leiden University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -4305,7 +4243,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 5,
-                    name: "Solbrige University",
+                    name: "Utrecht University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -4400,7 +4338,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 6,
-                    name: "Solbrige University",
+                    name: "Wageningen University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -4495,7 +4433,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 7,
-                    name: "Solbrige University",
+                    name: "Eindhoven University of Technology",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -4590,7 +4528,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 8,
-                    name: "Solbrige University",
+                    name: "University of Groningen",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -4685,7 +4623,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 9,
-                    name: "Solbrige University",
+                    name: "VU University Amsterdam",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -4780,7 +4718,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 10,
-                    name: "Solbrige University",
+                    name: "Maastricht University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -4883,7 +4821,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 1,
-                    name: "Solbrige University",
+                    name: "University College Dublin",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -4978,7 +4916,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 2,
-                    name: "Solbrige University",
+                    name: "Trinity College Dublin",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -5073,7 +5011,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 3,
-                    name: "Solbrige University",
+                    name: "National University of Ireland, Galway",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -5168,7 +5106,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 4,
-                    name: "Solbrige University",
+                    name: "University College Cork",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -5263,7 +5201,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 5,
-                    name: "Solbrige University",
+                    name: "Maynooth University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -5358,7 +5296,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 6,
-                    name: "Solbrige University",
+                    name: "Dublin City University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -5453,7 +5391,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 7,
-                    name: "Solbrige University",
+                    name: "University of Limerick",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -5548,7 +5486,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 8,
-                    name: "Solbrige University",
+                    name: "Dublin Institute of Technology",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -5643,7 +5581,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 9,
-                    name: "Solbrige University",
+                    name: "Cork Institute of Technology",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -5738,7 +5676,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 10,
-                    name: "Solbrige University",
+                    name: "Waterford Institute of Technology",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -5841,7 +5779,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 1,
-                    name: "Solbrige University",
+                    name: "University of Barcelona",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -5936,7 +5874,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 2,
-                    name: "Solbrige University",
+                    name: "Complutense University of Madrid",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -6031,7 +5969,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 3,
-                    name: "Solbrige University",
+                    name: "Autonomous University of Madrid",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -6126,7 +6064,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 4,
-                    name: "Solbrige University",
+                    name: "University of Salamanca",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -6221,7 +6159,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 5,
-                    name: "Solbrige University",
+                    name: "University of Valencia",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -6316,7 +6254,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 6,
-                    name: "Solbrige University",
+                    name: "Polytechnic University of Valencia",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -6411,7 +6349,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 7,
-                    name: "Solbrige University",
+                    name: "University of Granada",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -6506,7 +6444,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 8,
-                    name: "Solbrige University",
+                    name: "University of Seville",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -6601,7 +6539,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 9,
-                    name: "Solbrige University",
+                    name: "University of Zaragoza",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -6696,7 +6634,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 10,
-                    name: "Solbrige University",
+                    name: "University of Malaga",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -6799,7 +6737,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 1,
-                    name: "Solbrige University",
+                    name: "University of Bologna",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -6894,7 +6832,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 2,
-                    name: "Solbrige University",
+                    name: "Sapienza University of Rome",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -6989,7 +6927,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 3,
-                    name: "Solbrige University",
+                    name: "Politecnico di Milano",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -7084,7 +7022,7 @@ export const data = [
                 age: "18+",
                 details: {
                     id: 4,
-                    name: "Solbrige University",
+                    name: "University of Padua",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -7179,7 +7117,7 @@ export const data = [
                 age: "18+",
                 details: {
                     id: 5,
-                    name: "Solbrige University",
+                    name: "University of Florence",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -7274,7 +7212,7 @@ export const data = [
                 age: "18+",
                 details: {
                     id: 6,
-                    name: "Solbrige University",
+                    name: "University of Milan",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -7369,7 +7307,7 @@ export const data = [
                 age: "18+",
                 details: {
                     id: 7,
-                    name: "Solbrige University",
+                    name: "University of Naples Federico II",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -7464,7 +7402,7 @@ export const data = [
                 age: "18+",
                 details: {
                     id: 8,
-                    name: "Solbrige University",
+                    name: "University of Turin",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -7559,7 +7497,7 @@ export const data = [
                 age: "18+",
                 details: {
                     id: 9,
-                    name: "Solbrige University",
+                    name: "University of Pisa",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -7654,7 +7592,7 @@ export const data = [
                 age: "18+",
                 details: {
                     id: 10,
-                    name: "Solbrige University",
+                    name: "University of Bari Aldo Moro00",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -7764,7 +7702,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 1,
-                    name: "Solbrige University",
+                    name: "University of Cyprus",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -7859,7 +7797,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 2,
-                    name: "Solbrige University",
+                    name: "Cyprus University of Technology",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -7954,7 +7892,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 3,
-                    name: "Solbrige University",
+                    name: "European University Cyprus",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -8049,7 +7987,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 4,
-                    name: "Solbrige University",
+                    name: "University of Nicosia",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -8144,7 +8082,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 5,
-                    name: "Solbrige University",
+                    name: "Frederick University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -8239,7 +8177,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 6,
-                    name: "Solbrige University",
+                    name: "Neapolis University Pafos",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -8334,7 +8272,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 7,
-                    name: "Solbrige University",
+                    name: "Cyprus International University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -8429,7 +8367,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 8,
-                    name: "Solbrige University",
+                    name: "Open University of Cyprus",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -8524,7 +8462,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 9,
-                    name: "Solbrige University",
+                    name: "Eastern Mediterranean University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -8619,7 +8557,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 10,
-                    name: "Solbrige University",
+                    name: "Cyprus Institute University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -8722,7 +8660,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 1,
-                    name: "Solbrige University",
+                    name: "Peking University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -8817,7 +8755,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 2,
-                    name: "Solbrige University",
+                    name: "Tsinghua University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -8912,7 +8850,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 3,
-                    name: "Solbrige University",
+                    name: "Fudan University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -9007,7 +8945,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 4,
-                    name: "Solbrige University",
+                    name: "Zhejiang University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -9102,7 +9040,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 5,
-                    name: "Solbrige University",
+                    name: "Shanghai Jiao Tong University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -9197,7 +9135,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 6,
-                    name: "Solbrige University",
+                    name: "Nanjing University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -9292,7 +9230,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 7,
-                    name: "Solbrige University",
+                    name: "Wuhan University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -9387,7 +9325,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 8,
-                    name: "Solbrige University",
+                    name: "Beijing Normal University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -9482,7 +9420,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 9,
-                    name: "Solbrige University",
+                    name: "Harbin Institute of Technology",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -9577,7 +9515,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 10,
-                    name: "Solbrige University",
+                    name: "Sichuan University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -9680,7 +9618,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 1,
-                    name: "Solbrige University",
+                    name: "University of Latvia",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -9775,7 +9713,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 2,
-                    name: "Solbrige University",
+                    name: "Riga Technical University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -9870,7 +9808,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 3,
-                    name: "Solbrige University",
+                    name: "Sciences and Technologies University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -9965,7 +9903,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 4,
-                    name: "Solbrige University",
+                    name: "Riga Stradiņš University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -10060,7 +9998,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 5,
-                    name: "Solbrige University",
+                    name: "Ventspils University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -10155,7 +10093,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 6,
-                    name: "Solbrige University",
+                    name: "Turība University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -10250,7 +10188,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 7,
-                    name: "Solbrige University",
+                    name: "Daugavpils University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -10345,7 +10283,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 8,
-                    name: "Solbrige University",
+                    name: "Sport Education University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -10440,7 +10378,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 9,
-                    name: "Solbrige University",
+                    name: "Vidzeme University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",
@@ -10535,7 +10473,7 @@ export const data = [
                 age: "18",
                 details: {
                     id: 10,
-                    name: "Solbrige University",
+                    name: "Liepaja University",
                     img: cost,
                     location: "Australia,Milan,Rim",
                     date: "1996",

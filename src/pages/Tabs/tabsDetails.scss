@@ -19,12 +19,11 @@
           font-weight: 500;
           margin: 16px 0;
           position: relative;
+          padding: 0 80px 16px 80px;
 
           &:hover:after {
             position: absolute;
             opacity: 1;
-            width: 280px;
-            border-bottom: 2px solid #EE4248;
             transform: translateX(-50%);
             content: '';
             bottom: -15px;
@@ -43,5 +42,17 @@
 
       }
     }
+  }
+}
+
+@media (max-width: 1440px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1200px) {
+  #tabs .tabs--title {
+    width: 1032px;
   }
 }

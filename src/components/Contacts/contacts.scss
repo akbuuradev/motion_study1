@@ -611,3 +611,140 @@
     height: 270px;
   }
 }
+
+@media (max-width: 576px) {
+  #contacts .application--right {
+    width: 498px;
+    height: 540px;
+    margin-bottom: 80px;
+  }
+  #contacts .application--right__group--com {
+    width: 417px;
+  }
+  #contacts .application--right__group textarea {
+    width: 425px;
+  }
+  #contacts .application--left__info {
+    /* padding: 429px 0 164px 438px; */
+    width: 458px;
+    height: 595px;
+    padding: 398px 0 264px 405px;
+    margin-left: 43px;
+  }
+  #contacts .application--left__info--main {
+    width: 433px;
+    height: 598px;
+    right: 70px;
+  }
+  .figa {
+    width: 348px;
+    height: 273px;
+  }
+  #contacts .application--left__info--line {
+    margin-left: 50px;
+    margin-bottom: 112px;
+  }
+}
+
+@media (max-width: 451px) {
+  #contacts .application--right {
+    width: 400px;
+    height: 540px;
+    margin-bottom: 80px;
+  }
+  #contacts .application--right__name {
+    display: flex;
+    padding: 27px 30px;
+    flex-direction: column;
+  }
+  #contacts .application--right .inputs {
+    width: 328px;
+    margin-bottom: 37px;
+  }
+  #contacts .application--right__email {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+  }
+  #contacts .application--right {
+    height: 724px;
+  }
+  #contacts .application--right__group--com {
+    width: 327px;
+  }
+  #contacts .application--right__group textarea {
+    width: 327px;
+  }
+  #contacts .application--left__info {
+    width: 260px;
+    padding: 398px 0 264px 351px;
+  }
+  #contacts .application--left__info--main {
+    width: 355px;
+    height: 598px;
+    right: 39px;
+  }
+  #contacts .application--left__info--main__block--phone h3 {
+    font-size: 22px;
+  }
+  #contacts .application--left__info--main__block--email h3 {
+    font-size: 17px;
+    padding: 0 22px;
+  }
+  .figa {
+    width: 286px;
+    height: 280px;
+  }
+  #contacts .application--left__info--line {
+    margin-left: 2px;
+    margin-bottom: 112px;
+  }
+}
+
+@media (max-width: 400px) {
+  #contacts .application--right {
+    width: 352px;
+  }
+  #contacts .application--right .inputs {
+    width: 291px;
+    margin-bottom: 37px;
+  }
+  #contacts .application--right__group--com {
+    width: 293px;
+  }
+  #contacts .application--right__group textarea {
+    width: 289px;
+  }
+  #contacts .application--left__info {
+    width: 138px;
+    padding: 398px 0 201px 299px;
+  }
+  #contacts .application--left__info--main {
+    width: 303px;
+    height: 546px;
+    right: 39px;
+  }
+  #contacts .application--left__info--main__block h2 {
+    font-size: 29px;
+  }
+  #contacts .application--left__info--main__block--phone h3 {
+    font-size: 18px;
+  }
+  #contacts .application--left__info--main__block--phone__icon {
+    font-size: 28px;
+  }
+  #contacts .application--left__info--main__block--email h4 {
+    font-size: 28px;
+  }
+  #contacts .application--left__info--main__block--email h3 {
+    font-size: 16px;
+    padding: 0 11px;
+  }
+  #contacts .application--left__info--main__block--plane__whatsapp {
+    margin: 38px 45px;
+  }
+  .figa {
+    width: 241px;
+    height: 242px;
+  }
+}

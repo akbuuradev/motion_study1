@@ -10,15 +10,19 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { useLanguage } from "../../Data/LanguageContext";
 import { useDispatch, useSelector } from "react-redux";
 import { data } from "../../Data/countData";
+import {RxHamburgerMenu} from "react-icons/rx";
+import {GrClose} from "react-icons/gr";
 
 const Header = () => {
   const [searchContent, setSearchContent] = useState(false);
-  const [burger, setBurger] = useState(false);
   const [color, setColor] = useState(1);
   const [todo, setTodo] = useState("");
   const { language, changeLanguage } = useLanguage();
   const dispatch = useDispatch();
   const { detail } = useSelector((s) => s);
+  const [modal, setModal] = useState(true);
+  const [value, setValue] = useState("");
+  const [burger, setBurger] = useState(true);
 
   const fifa = data.find(
     (e) =>
@@ -106,7 +110,7 @@ const Header = () => {
                 <span>{translations[language].study}</span>
               </NavLink>
               <a
-                onClick={() => window.scroll(0, 3370)}
+                onClick={() => window.scroll(0, 3500)}
                 className="header--title__nav--item"
               >
                 <span>{translations[language].contacts}</span>
@@ -201,108 +205,75 @@ const Header = () => {
           </div>
           <div className="header--men">
             {burger ? (
-              <FiX
-                onClick={() => setBurger(false)}
-                style={{ fontSize: "31px", zIndex: "50" }}
-              />
+                <RxHamburgerMenu
+                    onClick={() => setBurger(false)}
+                    style={{ fontSize: "31px", zIndex: "50" }}
+                />
             ) : (
-              <FiMenu
-                onClick={() => setBurger(true)}
-                style={{ fontSize: "31px" }}
-              />
+                <GrClose
+                    onClick={() => setBurger(true)}
+                    style={{ fontSize: "31px" }}
+                />
             )}
             <div
-              style={{ display: burger ? "none" : "block" }}
-              className="header--men__div"
+                style={{ display: burger ? "none" : "block" }}
+                className="header--men__div"
             >
               <nav className="header--men__div--nav">
-                <NavLink
-                  onClick={() => (burger ? setBurger(false) : setBurger(true))}
-                  to={"/"}
-                >
-                  <h4 style={{ color: "black" }} className="h1">
-                    Home
-                  </h4>
+
+                <NavLink to={"/"}>
+                  <a onClick={() => setBurger(true)}  href="#"><h4 className="h1">Home</h4></a>
+                </NavLink><br />
+                <NavLink to={"/about"}>
+                  <a onClick={() => setBurger(true)}  href="#"><h4 className="h2">About Us</h4></a>
+                </NavLink><br />
+                <NavLink to={"/study"}>
+                  <a onClick={() => setBurger(true)}  href="#"><h4 className="h3">Study Abroad</h4></a>
+                </NavLink><br />
+                <NavLink to={"/contacts"}>
+                  <a onClick={() => setBurger(true)}  href="#">
+                    <h4 className="h4">Contacts</h4>
+                  </a>
+
                 </NavLink>
-                <NavLink
-                  onClick={() => (burger ? setBurger(false) : setBurger(true))}
-                  to={"/about"}
-                >
-                  <h4 style={{ color: "black" }} className="h2">
-                    About Us
-                  </h4>
-                </NavLink>
-                <NavLink
-                  onClick={() => (burger ? setBurger(false) : setBurger(true))}
-                  to={"/study"}
-                >
-                  <h4 style={{ color: "black" }} className="h3">
-                    Study Abroad
-                  </h4>
-                </NavLink>
-                <NavLink
-                  onClick={() => (burger ? setBurger(false) : setBurger(true))}
-                  to={"/contacts"}
-                >
-                  <h4 style={{ color: "black" }} className="h4">
-                    Contacts
-                  </h4>
-                </NavLink>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    width: "116px",
-                    marginTop: "10px",
-                    fontSize: "20px",
-                    marginLeft: "10px",
-                  }}
-                >
+
+                <div className="header--men__div--nav__navcolor">
                   <h5
-                    style={{
-                      color: color === 1 ? "black" : "#7E7B7B",
-                      cursor: "pointer",
-                      borderBottom: color === 1 ? "2px solid #5609BB" : "",
-                    }}
-                    onClick={() => setColor(1)}
+                      style={{
+                        color: color === 1 ? "black" : "#7E7B7B",
+                        cursor: "pointer",
+                        borderBottom: color === 1 ? "2px solid #5609BB" : "",
+                      }}
+                      onClick={() => setColor(1)}
                   >
                     EN
                   </h5>
                   <h5
-                    style={{
-                      color: color === 2 ? "black" : "#7E7B7B",
-                      cursor: "pointer",
-                      borderBottom: color === 2 ? "2px solid #5609BB" : "",
-                    }}
-                    onClick={() => setColor(2)}
+                      style={{
+                        color: color === 2 ? "black" : "#7E7B7B",
+                        cursor: "pointer",
+                        borderBottom: color === 2 ? "2px solid #5609BB" : "",
+                      }}
+                      onClick={() => setColor(2)}
                   >
                     RU
                   </h5>
                   <h5
-                    style={{
-                      color: color === 3 ? "black" : "#7E7B7B",
-                      cursor: "pointer",
-                      borderBottom: color === 3 ? "2px solid #5609BB" : "",
-                    }}
-                    onClick={() => setColor(3)}
+                      style={{
+                        color: color === 3 ? "black" : "#7E7B7B",
+                        cursor: "pointer",
+                        borderBottom: color === 3 ? "2px solid #5609BB" : "",
+                      }}
+                      onClick={() => setColor(3)}
                   >
                     KG
                   </h5>
                 </div>
-                <div
-                  style={{
-                    fontSize: "30px",
-                    marginTop: "27px",
-                    display: "flex",
-                    justifyContent: "space-around",
-                  }}
-                >
+                <div className="header--men__div--nav__navicons">
                   <FaTelegramPlane />
                   <AiFillInstagram />
                   <FaPhoneVolume />
-                  <CgMail
-                    style={{ fontSize: "35px", margin: "-3px 0 0 -11px" }}
-                  />
+                  <CgMail className="header--mendiv--navicons--lol" />
                 </div>
               </nav>
             </div>
