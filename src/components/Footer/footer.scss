@@ -57,3 +57,23 @@
     display: none;
   }
 }
+
+@media (max-width: 320px) {
+  #footer .footer--about {
+    padding: 41px 0 27px 0;
+  }
+  #footer .footer--line {
+    width: 90%;
+  }
+  #footer .footer--about__fill {
+    margin-right: 27px;
+  }
+  #footer .footer h4 {
+    padding: 18px 28px 20px 0;
+  }
+  #footer {
+    background: black;
+    height: 169px;
+    width: 320px;
+  }
+}

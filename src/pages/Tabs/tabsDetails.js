@@ -11,6 +11,8 @@ const TabsDetails = () => {
 
         const [tabs, setTabs] = useState(0)
 
+    console.log(tabs + 1)
+
     const {count, aboutCount } = useSelector(s => s)
 
 
@@ -22,7 +24,7 @@ const TabsDetails = () => {
                             <div className="tabs--title__photo">
                                 {
                                     data[count - 1].about[aboutCount - 1].details.tabs.map(el => (
-                                        <span  onClick={() => setTabs(el.id - 1)} className="tabs--title__photo--item">{el.name}</span>
+                                        <span style={{borderBottom: el.id === tabs + 1 ? "2px solid red" : ""}}  onClick={() => setTabs(el.id - 1)} className="tabs--title__photo--item">{el.name}</span>
                                     ))
                                 }
                             </div>

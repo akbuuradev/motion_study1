@@ -8,6 +8,14 @@
 .container{
   width: 1240px;
   margin: 0 auto;
+
+}
+
+html{
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 a {

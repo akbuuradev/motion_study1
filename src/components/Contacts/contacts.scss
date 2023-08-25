@@ -13,7 +13,7 @@
       height: 578px;
       flex-shrink: 0;
       background: #FFF;
-      box-shadow: 5px 8px 26px 0 rgb(7, 6, 6);
+
 
       .inputs {
         width: 275px;
@@ -21,7 +21,6 @@
 
       &__line {
         width: 30px;
-
       }
 
       h1 {
@@ -213,6 +212,7 @@
       background: rgba(0, 0, 0, 0.8);
 
       &--open {
+
         &__none {
           display: flex;
           justify-content: end;
@@ -228,7 +228,10 @@
         background: #ffffff;
 
         &__name {
-          h2 {
+          display: flex;
+          align-items: start;
+          padding: 0 0 0 50px;
+          span {
             text-align: center;
             font-weight: 600;
             font-size: 28px;
@@ -244,7 +247,10 @@
         }
 
         &__phone {
-          h2 {
+          display: flex;
+          align-items: start;
+          padding: 20px 0 20px 50px;
+          span {
             text-align: center;
             font-weight: 600;
             color: #000;
@@ -260,7 +266,10 @@
         }
 
         &__email {
-          h2 {
+          display: flex;
+          align-items: start;
+          padding: 0 0 0 50px;
+          span {
             text-align: center;
             font-weight: 600;
             color: #000;
@@ -276,7 +285,10 @@
         }
 
         &__group {
-          h2 {
+          display: flex;
+          align-items: start;
+          padding: 20px 0 20px 50px;
+          span {
             text-align: center;
             font-weight: 600;
             color: #000;
@@ -292,7 +304,10 @@
         }
 
         &__help {
-          h2 {
+          display: flex;
+          align-items: start;
+          padding: 0 0 0 50px;
+          span {
             text-align: center;
             font-weight: 600;
             color: #000;
@@ -473,6 +488,10 @@
     width: 176px;
     padding: 16px 92px 19px 57px;
   }
+ #application .application--left__info--main__block--card{
+  height: 219px;
+  width: 354px;
+}
 }
 
 @media (max-width: 992px) {
@@ -527,6 +546,10 @@
   }
   #contacts .application--left__info--main__block--email h4 {
     font-size: 20px;
+  }
+  #application .application--left__info--main__block--card{
+    height: 233px;
+    width: 282px;
   }
 
 }
@@ -610,6 +633,20 @@
     width: 527px;
     height: 270px;
   }
+  #contacts .application .detail--open {
+    width: 508px;
+    height: 465px;
+  }
+  #contacts .application .detail--open span {
+    font-size: 25px;
+  }
+  #contacts .application .detail--open h3 {
+    font-size: 22px;
+  }
+  #application .application--left__info--main__block--card{
+    height: 274px;
+    width: 534px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -643,6 +680,17 @@
   #contacts .application--left__info--line {
     margin-left: 50px;
     margin-bottom: 112px;
+  }
+  #contacts .application .detail--open__none {
+    margin-bottom: -24px;
+  }
+  #contacts .application .detail--open {
+    width: 421px;
+    height: 524px;
+  }
+  #application .application--left__info--main__block--card{
+    height: 274px;
+    width: 361px;
   }
 }
 
@@ -692,12 +740,28 @@
     padding: 0 22px;
   }
   .figa {
-    width: 286px;
-    height: 280px;
+    height: 287px;
+    width: 295px;
   }
   #contacts .application--left__info--line {
-    margin-left: 2px;
-    margin-bottom: 112px;
+    margin-left: -14px;
+    margin-bottom: 111px;
+  }
+  #contacts .application .detail--open {
+    width: 351px;
+    height: 524px;
+  }
+  #contacts .application .detail--open__name {
+    padding: 0;
+  }
+  #contacts .application .detail--open__email {
+    padding: 0 0 0 31px;
+  }
+  #contacts .application .detail--open__group {
+    padding: 20px 0 20px 8px;
+  }
+  #contacts .application .detail--open__help {
+    padding: 0;
   }
 }
 
@@ -744,7 +808,108 @@
     margin: 38px 45px;
   }
   .figa {
+    height: 247px;
     width: 241px;
-    height: 242px;
+  }
+  #contacts .application .detail--open__phone {
+    padding: 20px 0 20px 23px;
+  }
+  #contacts .application--left__info--line {
+    margin-left: -10px;
+    margin-bottom: 112px;
+  }
+}
+
+@media (max-width: 375px) {
+  #contacts .application--right {
+    width: 312px;
+  }
+  #contacts .application--right .inputs {
+    width: 284px;
+    margin-bottom: 37px;
+  }
+  #contacts .application--right__group--com {
+    width: 280px;
+  }
+  #contacts .application--right__group textarea {
+    width: 280px;
+  }
+  #contacts .application--right__group--btn {
+    width: 176px;
+    padding: 14px 71px 22px 53px;
+  }
+  #contacts .application--left__info--line {
+    margin-left: -313px;
+    margin-bottom: -244px;
+  }
+  #contacts .application--left__info {
+    width: 138px;
+    padding: 398px 0 207px 271px;
+  }
+  #contacts .application--left__info--main {
+    width: 303px;
+    height: 546px;
+    right: 20px;
+  }
+  #contacts .application--right .inputs {
+    width: 258px;
+    margin-bottom: 37px;
+  }
+  #contacts .application--right__group--com {
+    width: 253px;
+  }
+  #contacts .application--right__group textarea {
+    width: 252px;
+  }
+  #contacts .application--right h1 {
+    font-size: 22px;
+  }
+  #contacts .application--left__info--line {
+    margin-left: -335px;
+    margin-bottom: -242px;
+  }
+}
+
+@media (max-width: 320px) {
+  #contacts .application--left__info {
+    width: 105px;
+    padding: 392px 0 207px 233px;
+  }
+  #contacts .application--right h1 {
+    font-size: 22px;
+    width: 219px;
+  }
+  #contacts .application--left__info--main {
+    width: 254px;
+  }
+  #contacts .application--left__info--main__block h2 {
+    font-size: 27px;
+  }
+  #contacts .application--left__info--main__block {
+    padding: 30px 17px;
+  }
+  #contacts .application--left__info--main__block--phone h3 {
+    font-size: 15px;
+  }
+  #contacts .application--left__info--main__block--email h4 {
+    font-size: 20px;
+  }
+  #contacts .application--left__info--main__block--email h3 {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  #contacts .application--left__info--main__block--plane {
+    font-size: 30px;
+  }
+  #contacts .application--left__info--main__block--phone__icon {
+    font-size: 24px;
+  }
+#contacts .figa {
+  height: 247px;
+  width: 215px;
+}
+  #contacts .application--left__info--line {
+    margin-left: -282px;
+    margin-bottom: -248px;
   }
 }

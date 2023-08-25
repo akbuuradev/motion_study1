@@ -8,7 +8,7 @@ import {useNavigate} from "react-router-dom";
 const Vienna = () => {
 
     const {count, aboutCount} = useSelector(s => s)
-    const [line, setLine] = useState(false)
+    const [line, setLine] = useState(0,5)
 
     console.log(data[0].about)
 
@@ -56,7 +56,7 @@ const Vienna = () => {
                         </div>
                     </div>
                     {
-                        data[count - 1].about.slice(0,5).map((el) => (
+                        data[count - 1].about.slice(line ? 0 : 5, line ? 5 : 10).map((el) => (
                             <div onClick={() => {
                                 dispatch({type: "ABOUT_COUNT", payload: el.id})
                                 nav("/detail")
