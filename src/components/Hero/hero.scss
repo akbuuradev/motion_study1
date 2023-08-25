@@ -1,6 +1,11 @@
 #hero {
   padding: 100px 0;
   position: relative;
+
+  .flex {
+    display: none;
+  }
+
   .hero {
     display: flex;
     align-items: flex-start;
@@ -207,6 +212,9 @@
   .container{
     width: 90%;
   }
+  #hero .hero .video-container {
+    left: 418px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -226,4 +234,93 @@
     animation: floatingAnimation 6s ease-in-out infinite;
     width: 85%;
 }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    padding: 50px;
+    .flex {
+      display: block;
+      margin: 0 0 70px 0;
+      width: 335px;
+      height: 47px;
+
+    }
+    .w-full {
+      width: 181%;
+      height: 47px;
+      border: 1px solid blueviolet;
+    }
+    .h-4 {
+      height: 3rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #hero .flex {
+    border: 1px solid rebeccapurple;
+    border-radius: 10px;
+    height: 47px;
+    width: 499px;
+  }
+}
+
+@media (max-width: 451px) {
+  #hero .flex {
+    margin: 30px 0 70px 0;
+    width: 396px;
+    height: 47px;
+  }
+}
+
+@media (max-width: 400px) {
+  #hero .flex {
+    margin: 30px 0 70px 0;
+    width: 339px;
+    height: 47px;
+  }
+  #hero .hero .hero--block {
+    height: 295px;
+    bottom: -340px;
+    width: 87%;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  #hero .flex {
+    border: 1px solid rebeccapurple;
+    border-radius: 10px;
+    height: 47px;
+    width: 335px;
+  }
+}
+
+@media (max-width: 320px) {
+  #hero .hero .here--title h4 {
+    font-size: 23px;
+  }
+  #hero .flex {
+    margin: 30px 0 -1px 0;
+    width: 287px;
+  }
+  #hero .hero .hero--block .hero--block__input {
+    display: flex;
+    align-items: flex-start;
+    width: 250px;
+  }
+  #hero .hero .hero--title h4 {
+    color: rgba(86, 9, 187, 0.8);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  #hero .hero .hero--block {
+    height: 295px;
+    bottom: -340px;
+    width: 86%;
+    gap: 10px;
+  }
 }

@@ -6,7 +6,6 @@ import OutsideClickHandler from "react-outside-click-handler";
 import { FaPhoneVolume, FaTelegramPlane } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { CgMail } from "react-icons/cg";
-import { FiMenu, FiX } from "react-icons/fi";
 import { useLanguage } from "../../Data/LanguageContext";
 import { useDispatch, useSelector } from "react-redux";
 import { data } from "../../Data/countData";
@@ -230,21 +229,25 @@ const Header = () => {
                 <NavLink to={"/study"}>
                   <a onClick={() => setBurger(true)}  href="#"><h4 className="h3">Study Abroad</h4></a>
                 </NavLink><br />
-                <NavLink to={"/contacts"}>
-                  <a onClick={() => setBurger(true)}  href="#">
+                <NavLink to={"#"} onClick={() => window.scroll(0,6100)}>
+                  <a onClick={() =>
+                      setBurger(true)
+                  }  href="#">
                     <h4 className="h4">Contacts</h4>
                   </a>
 
                 </NavLink>
 
-                <div className="header--men__div--nav__navcolor">
+                <div className="header--men__div--nav__navcolor" onClick={() => changeLanguage}>
                   <h5
                       style={{
                         color: color === 1 ? "black" : "#7E7B7B",
                         cursor: "pointer",
                         borderBottom: color === 1 ? "2px solid #5609BB" : "",
                       }}
-                      onClick={() => setColor(1)}
+                      onClick={() =>
+                          setColor(1)
+                  }
                   >
                     EN
                   </h5>
@@ -271,9 +274,9 @@ const Header = () => {
                 </div>
                 <div className="header--men__div--nav__navicons">
                   <FaTelegramPlane />
-                  <AiFillInstagram />
+                  <AiFillInstagram className="header--men__div--nav__navicons--locols"/>
                   <FaPhoneVolume />
-                  <CgMail className="header--mendiv--navicons--lol" />
+                  <CgMail className="header--men__div--nav__navicons--lol" />
                 </div>
               </nav>
             </div>

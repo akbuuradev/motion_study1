@@ -203,17 +203,22 @@
     flex-direction: column;
   }
   #vienna .vienna--linz__graz {
-    gap: 54px;
+    gap: 34px;
   }
   #vienna .vienna--linz .title {
     align-items: baseline;
   }
   #vienna .vienna--linz__graz--name h2 {
-    width: 221px;
+    width: 170px;
   }
   #vienna .vienna--linz__graz img {
     width: 219px;
     height: 227px;
+  }
+  #vienna .vienna--select {
+    flex-wrap: wrap;
+    margin: 0 0 0 20px;
+    gap: 35px;
   }
 }
 
@@ -273,4 +278,5 @@
   #vienna .vienna--linz__graz--name h2 {
     width: 250px;
   }
+
 }

@@ -70,7 +70,7 @@
     width: 467px;
 }
 #from .from--title p {
-  padding: 40px 0 40px 0;
+  padding: 104px 0 40px 0;
   font-size: 19px;
   width: 420px;
 }
@@ -107,6 +107,18 @@
 }
 @media (max-width: 500px) {
 #from {
-    padding: 420px 0;
+    padding: 130px 0;
 }
+}
+
+@media (max-width: 375px) {
+  #from .from--blocks__block--photo {
+    width: 93%;
+  }
+}
+
+@media (max-width: 320px) {
+  #exams .exams--big__two--block__text h3 {
+    width: 280px;
+  }
 }

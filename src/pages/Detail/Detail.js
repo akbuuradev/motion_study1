@@ -5,7 +5,7 @@ import TabsDetails from "../Tabs/tabsDetails";
 const Detail = () => {
     return (
         <div>
-            {/*<University/>*/}
+            <University/>
             <TabsDetails/>
         </div>
     );
